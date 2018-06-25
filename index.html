@@ -7,6 +7,10 @@
   <body>
     <h1>test page</h1>
     <hr>
+    <div id="content"class="content">
+      <button type="button" name="button" onclick="create()">create</button>
+
+    </div>
 
     <div class="todak">
 
@@ -16,10 +20,19 @@
     </div>
     <script type="text/javascript">
 
-    var div = document.createElement("DIV");
-    div.className = "comment";
-    div.id = "comment";
-    
+
+    //auto create module
+    var content = document.getElementById("content");
+
+    function create(){
+      var div = document.createElement("DIV");
+      div.className = "comment";
+      div.id = "comment";
+      div.innerHTML = "hong<Br>";
+      content.appendChild(div);
+    }
+
+
 
 
 
