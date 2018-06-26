@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .A,.B,.C{
+        height: 400px;
+      }
+      .hide{
+        display: none;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      hello
+
+    </header>
+    <hr>
+    <div class="toggle">
+      <a href="#A" onclick="clickA()">A</a>
+      <a href="#B" onclick="clickB()">B</a>
+      <a href="#C" onclick="clickC()">C</a>
+    </div>
+    <div id="A" class="A">
+      This is A
+    </div>
+    <div id="B" class="B hide">
+      THis is B
+
+
+    </div>
+    <div id="C" class="C hide">
+      THis is C
+
+    </div>
+    <script type="text/javascript">
+    var A = document.getElementById("A");
+    var B = document.getElementById("B");
+    var C = document.getElementById("C");
+    function clickA(){
+      A.classList.remove("hide");
+      B.classList.add("hide");
+      C.classList.add("hide");
+    }
+
+    function clickB(){
+      A.classList.add("hide");
+      B.classList.remove("hide");
+      C.classList.add("hide");
+    }
+    function clickC(){
+      A.classList.add("hide");
+      B.classList.add("hide");
+      C.classList.remove("hide");
+    }
+
+    </script>
+
+  </body>
+</html>
