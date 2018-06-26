@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title></title>
+    <script>
+    $(document).ready(function() {
+
+      $('.te').click(function(){
+        $('.d1').animate({opacity:"1"}, 1000);
+        $('.d2').animate({opacity:"1"}, 1000);
+        $('.d3').animate({opacity:"1"}, 1000);
+        $('.d4').animate({opacity:"1"}, 1000);
+        $('.d5').animate({opacity:"1"}, 1000);
+      });
+})
+
+    </script>
+    <style media="screen">
+    html,body{
+      background-color: grey;
+      width: 100%;
+      margin:0;
+      padding:0;
+      height: 100%;
+    }
+      .A,.B,.C{
+        height: 400px;
+        display: none;
+      }
+      .hide{
+        display: none;
+
+      }
+      footer{
+        top:100%;
+        width: 100%;
+        position: absolute;
+        transition: all 2s ease-out;
+        height: 0;
+        background-color: red;
+        margin:0;
+        padding:0;
+        visibility: hidden;
+      }
+      .coment{
+        position: sticky;
+        display: block;
+        margin-top:16%;
+        text-align: center;
+      }
+      span{
+        opacity: 0;
+
+
+      }
+      /* footer:hover{
+        transform: translate(0,-300px);
+        height:400px;
+
+      } */
+
+    </style>
+  </head>
+  <body>
+    <header>
+      hello
+
+    </header>
+    <hr>
+<span class="test">Opacity test code</span>
+    <button type="button" name="button" onclick="go()">asdasd</button>
+    <div class="toggle" style="display:none">
+      <a href="#A" onclick="clickA()">A</a>
+      <a href="#B" onclick="clickB()">B</a>
+      <a href="#C" onclick="clickC()">C</a>
+    </div>
+    <div id="A" class="A">
+      This is A
+    </div>
+    <div id="B" class="B hide">
+      THis is B
+    </div>
+    <div id="C" class="C hide">
+      THis is C
+    </div>
+    <footer id="foot">&nbsp;</footer>
+    <div class="coment">
+      고민은 나눌때 지워집니다.
+      <span id="d1"><Br>.</span>
+      <span id="d2"><Br>.</span>
+      <span id="d3"><Br>.</span>
+      <span id="d4"><br>당신의 고민은</span>
+      <span id="d5"><Br>스스로의 것인가요?</span>
+    </div>
+
+    <script type="text/javascript">
+    var A = document.getElementById("A");
+    var B = document.getElementById("B");
+    var C = document.getElementById("C");
+    function clickA(){
+      A.classList.remove("hide");
+      B.classList.add("hide");
+      C.classList.add("hide");
+    }
+    function clickB(){
+      A.classList.add("hide");
+      B.classList.remove("hide");
+      C.classList.add("hide");
+    }
+    function clickC(){
+      A.classList.add("hide");
+      B.classList.add("hide");
+      C.classList.remove("hide");
+    }
+    function go(){
+      var foot = document.getElementById("foot");
+      foot.style.height="55%";
+      foot.style.transform = "translate(0,-100%)";
+      foot.style.visibility = "visible";
+
+    }
+
+
+    </script>
+
+  </body>
+</html>
