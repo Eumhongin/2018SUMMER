@@ -28,6 +28,8 @@
         $(".logo").animate({opacity:"1"},500);
         $(".comment").delay("4000");
         $(".comment").animate({top:"20%"},1000);
+        $("#LOG_FORM").delay("4500");
+        $("#LOG_FORM").animate({opacity:"1"},1000);
 
       });
     })
@@ -46,7 +48,7 @@
       <span id="d5"><Br>누구와 나누었나요?</span>
     </div>
       <!-- 로그인 섹션 -->
-    <form action="index.html" method="post">
+    <form id="LOG_FORM" action="index.html" method="post">
       <div class="login_form">
         <div class="ID">
           <input class="id_text"type="text" name="" value="" placeholder="이메일" required >
@@ -54,8 +56,9 @@
         <div class="PASS">
           <input class="pass_text" type="text" name="" value="" placeholder="비밀번호" required >
         </div>
-        <span class="UNKNOWN"><a href="#">익명으로 로그인 하기</a></span>
-        <button class="btn" type="submit" name="button">로그인</button>
+        <br>
+        <span><a href="#" class="UNKNOWN">익명으로 로그인 하기</a></span><Br>
+        <br><button class="btn" type="submit" name="button">로그인</button>
 
       </div>
 
