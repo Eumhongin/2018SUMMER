@@ -1,0 +1,8 @@
+@font-face {
+  font-family: SD;
+  src: local(SDMiSaeng),
+       url(SDMiSaeng.ttf) format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  unicode-range: U+0-10FFFF;
+}
