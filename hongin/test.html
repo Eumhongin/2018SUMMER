@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="asd.CSS">
+    <link rel="stylesheet" href="font/font.css">
+    <title></title>
+    <script>
+    $(document).ready(function(){
+      $("body").click(function(){
+        $(".bottomslide").animate({height:"100%",top:"0%",color:"black"},1000);
+        $("#d1").delay("100");
+        $("#d1").animate({opacity:"1"},500);
+        $("#d2").delay("800");
+        $("#d2").animate({opacity:"1"},500);
+        $("#d3").delay("1500");
+        $("#d3").animate({opacity:"1"},500);
+        $("#d4").delay("2200");
+        $("#d4").animate({opacity:"1"},500);
+        $("#d5").delay("3500");
+        $("#d5").animate({opacity:"1"},500);
+        $(".logo").delay("4200");
+        $(".logo").animate({opacity:"1"},500);
+        $(".comment").delay("4000");
+        $(".comment").animate({top:"20%"},1000);
+
+      });
+    })
+    </script>
+  </head>
+  <body>
+    <div class="logo">
+      나쁜기억지우개
+    </div>
+    <div id="co" class="comment">
+      <span id="d">고민은 나눌때 지워집니다.</span>
+      <span id="d1"><Br>.</span>
+      <span id="d2"><Br>.</span>
+      <span id="d3"><Br>.</span>
+      <span id="d4"><br>당신의 고민은</span>
+      <span id="d5"><Br>스스로의 것인가요?</span>
+    </div>
+
+    <div class="bottomslide">
+      &nbsp;
+    </div>
+    <script type="text/javascript">
+    var d = $("#d");
+    d.animate({opacity:"1"},1000);
+    </script>
+  </body>
+</html>

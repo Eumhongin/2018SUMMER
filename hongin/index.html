@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <div class="Logo">
+
+      </div>
+      <div class="login">
+        <form class="LoginForm" action="index.html" method="post">
+          
+        </form>
+
+      </div>
+    </header>
+
+    <div id="content"class="content">
+      <button type="button" name="button" onclick="create()">create</button>
+    </div>
+
+    <div class="todak">
+
+    </div>
+    <div class="comment">
+
+    </div>
+    <script type="text/javascript">
+
+
+    //auto create module
+    var content = document.getElementById("content");
+
+    function create(){
+      var div = document.createElement("DIV");
+      div.className = "comment";
+      div.id = "comment";
+      div.innerHTML = "hong<Br>";
+      content.appendChild(div);
+    }
+
+
+
+    </script>
+
+  </body>
+</html>
