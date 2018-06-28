@@ -2,7 +2,7 @@ html,body{
   padding:0;
   margin:0;
   width: 100%;
-  
+
   font-family: 'SD';
 }
 
@@ -42,7 +42,4 @@ html,body{
   background-color: red;
   position: absolute;
   left: -40px;
-}
-@media media screen and (max-width:768px){
-
 }
