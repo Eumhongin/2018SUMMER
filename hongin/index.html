@@ -2,37 +2,145 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="css/core.css">
+
     <title></title>
   </head>
   <body>
-    <header>
+    <header class="row">
       <div class="Logo">
+        <span>나쁜기억지우개</span>
+      </div>
+      <div class="SearchBar">
+        <input type="text" name="" value="">
 
       </div>
-      <div class="login">
-        <form class="LoginForm" action="index.html" method="post">
-          
-        </form>
-
+      <div class="joke">
+        <span>잡담</span>
       </div>
+      <div class="concern">
+        <span>고민</span>
+      </div>
+      <div class="alarm">
+        <img src="" alt="알람">
+      </div>
+      <div class="store">
+        <img src="" alt="상점">
+      </div>
+      <div class="setting">
+        <img src="" alt="설정">
+      </div>
+
     </header>
+    <hr>
 
-    <div id="content"class="content">
+    <!-- <div id="content"class="content">
       <button type="button" name="button" onclick="create()">create</button>
+    </div> -->
+    <section class="row container">
+      <div class="content1 col-4"  id="te" onclick="te();">
+        <div class="content">
+          ddddddddd
+
+        </div>
+        <div class="content">
+          ddddddddd
+
+        </div>
+        <div class="content">
+          ddddddddd
+
+        </div>
+        <div class="content">
+          ddddddddd
+
+        </div>
+        <div class="content">
+          ddddddddd
+
+        </div>
+        <div class="content">
+          ddddddddd
+
+        </div>
+        <div class="content">
+          ddddddddd
+
+        </div>
+        <div class="content">
+          ddddddddd
+
+        </div>
+        <div class="content">
+          ddddddddd
+
+        </div>
+      </div>
+      <div class="content2 col-4">
+        <div class="content">
+          ddddddddd
+
+        </div>
+      </div>
+      <div class="content3 col-4">
+        <div class="content">
+          ddddddddd
+
+        </div>
+        <div class="content">
+          ddddddddd
+
+        </div>
+      </div>
+      <div id="content4" class="content4 col-4">
+        <div class="content">
+          ddddddddd
+
+        </div>
+        <div class="content">
+          ddddddddd
+
+        </div>
+        <div class="content">
+          ddddddddd
+
+        </div>
+        <div class="content">
+          ddddddddd
+
+        </div>
+      </div>
+
+    </section>
+    <div class="asidegroup">
+      <div class="aside" onclick="grid()">
+        asdasd
+      </div>
+      asdasdasdasda
     </div>
 
-    <div class="todak">
 
-    </div>
-    <div class="comment">
-
-    </div>
     <script type="text/javascript">
 
 
     //auto create module
     var content = document.getElementById("content");
+    function grid(){
+      var col4 = document.getElementById("content4");
+      col4.style.visibility = "hidden";
+    }
+    function te(){
+      var col4 = document.getElementById("content4");
 
+      col4.style.visibility = "visible";
+    }
     function create(){
       var div = document.createElement("DIV");
       div.className = "comment";
