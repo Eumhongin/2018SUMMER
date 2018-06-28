@@ -15,14 +15,17 @@ $(window).on('load',function(){
 
 function waterFall() {
 	var $boxs=$('#main>div');
+
 	var w=$boxs.eq(0).outerWidth();
-	alert(w);
+	//alert(w);
 	var cols=Math.floor($(window).width()/w);
-	alert($(window).width());
-	$("#main").width(w*cols).css('margin','0 auto');	//메인박스 크기구하는거
+//	alert($(window).width());
+	$("#main").width(w*cols).css('margin','0 auto');	//메인박스 크기구하는거 스타일까지 세팅끝
 	var hArr=[];
 	$boxs.each(function(index,value){
-		var h=$boxs.eq(index).outerHeight();
+		console.log(index);
+		var h=$boxs.eq(index).outerHeight();		//각박스의 높이같음.
+
 		if(index<cols){
 			hArr.push(h);
 		}else {
