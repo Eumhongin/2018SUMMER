@@ -315,6 +315,11 @@
 
 
 <script>
+var textxontent = $(".text").text();
+console.log(textxontent);
+var hash = location.hash = '알람';
+//hash.style.color = 'yellow';
+console.log(hash);
 
 $(window).on('load',function(){
   window.onresize = function(){location.reload();}
@@ -389,9 +394,9 @@ var boxwid = $boxs.outerWidth();
       var minHeightIndex=$.inArray(minH,hArr);
 
       //  console.log(value)
-      console.log(minHeightIndex);
-      console.log(boxwid);
-      console.log(minHeightIndex*boxwid);
+    //  console.log(minHeightIndex);
+    //  console.log(boxwid);
+    //  console.log(minHeightIndex*boxwid);
       $(value).css({
 
         'position':'absolute',
