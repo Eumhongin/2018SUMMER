@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Example</title>
+  <script>
+    (function() {
+      "use strict";
+
+      var observer = new MutationObserver(function() {
+        if (document.body) {
+          // It exists now
+          document.body.insertAdjacentHTML(
+            "beforeend",
+            "<div>Found <code>body</code></div>"
+          );
+          observer.disconnect();
+        }
+      });
+      observer.observe(document.documentElement, {childList: true});
+    })();
+  </script>
+</head>
+<body>
+  <div id="foo"></div>
+</body>
+</html>
