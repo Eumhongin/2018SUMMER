@@ -2,9 +2,14 @@ html,body{
   padding:0;
   margin:0;
   width: 100%;
-
+  font-family: 'sd';
 
 }
+#main{
+  width: 80%;
+  margin:0 auto;
+}
+
 
 .Logo,.SearchBar,.joke,.concern,.alarm,.store,.setting{
   float: left;
@@ -15,19 +20,18 @@ html,body{
   padding:0;
 
 }
-.text1{
-  text-align: center;
-  color:black;
-  font-family: 'sd';
-  font-size: 1.8em;
+.shield{
+  max-width: 50%;
+  margin:0 auto;
 
 }
-.text{
-  text-align: center;
-  color:black;
-  font-family: 'sd';
-}
+.box{
 
+  border:solid 1px black;
+  text-align: center;
+  border-radius: 8px;
+
+}
 .asidegroup{
   background-color: orange;
   position: fixed;
@@ -44,30 +48,12 @@ html,body{
   position: absolute;
   left: -40px;
 }
-@media screen and (max-width:768px){
-  .text1{
-    text-align: center;
-    color:black;
-    font-family: 'sd';
-    font-size:1em;
-  }
-  .text1-col2{
-    text-align: center;
-    font-family: 'sd';
-    font-size: 1.8em;
-  }
+@media screen and (max-width:1440px){
+
 }
-@media screen and (max-width:430px){
+@media screen and (max-width:1024px){
 
-  .text1-col2{
-    text-align: center;
-    font-family: 'sd';
-    font-size: 1em;
-  }
+}
+@media screen and (max-width:768px){
 
-  .text1-col1{
-    text-align: center;
-    font-family: 'sd';
-    font-size: 1.8em;
-  }
 }
