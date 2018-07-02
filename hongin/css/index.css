@@ -19,21 +19,21 @@ header{
   background-color: white;
   border-bottom:0.5px solid black;
   padding:0;
-  padding-top:1.2%;
+  padding-top:1%;
+  font-size: 28px;
 
 }
-
-
 .Logo,.SearchBar,.joke,.concern,.alarm,.login,.store,.setting{
   float: left;
-  position: absolute;
+
 }
 .container{
   margin-left: 5%;
   margin-right: 5%;
   padding:0;
-
-
+}
+.Logo{
+  font-size: 30px;
 }
 .shield{
   max-width: 50%;
@@ -41,8 +41,6 @@ header{
 
 }
 .box{
-
-
   text-align: center;
   border-radius: 8px;
 
@@ -57,18 +55,17 @@ header{
 }
 .aside{
   width: 40px;
-  top:40%;
-  height: 5%;
+  top:20%;
+  height: 10%;
   background-color: red;
   position: absolute;
   left: -40px;
+  text-align: center;
 }
-.logo{
-  left: 5%;
-}
+
 .SearchBar{
 
-  left: 15%;
+  margin-left: 40px;
   width: 46%;
 }
 .SearchBar input{
@@ -76,25 +73,51 @@ header{
   border-radius: 5px;
   border:none;
   border:1px solid #626262;
-  height:24px;
+  background-color: #EFEFEF;
+  height:30px;
+
 }
-.joke{
-  left:63%;
+.joke {
+  margin-left: 20px;
 }
-.concern{
-  left: 66%;
+
+.concern {
+  margin-left: 20px;
 }
-.login{
-  left:69%;
+
+.login {
+  margin-left: 20px;
 }
-.alarm{
-  left:76%;
+
+.alarm {
+  margin-left: 20px;
 }
-.store{
-  left:80%;
+
+.store {
+  margin-left: 20px;
 }
-.setting{
-  left:84%;
+
+.setting {
+  margin-left: 20px;
+}
+.info{
+  margin:0 auto;
+  text-align: center;
+  margin-top:8%;
+  background-color: red;
+}
+.mypic{
+  margin:0 auto;
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  border: solid black 1px;
+  border-radius: 50%;
+
+}
+.mycontent,.myreply,.sendgift{
+  margin-top:20%;
+
 }
 @media screen and (max-width:1440px){
 
