@@ -6,7 +6,7 @@ html,body{
 
 }
 #main{
-  width: 80%;
+
   margin:0 auto;
   margin-top: 8%;
 }
@@ -20,7 +20,8 @@ header{
   border-bottom:0.5px solid black;
   padding:0;
   padding-top:1%;
-  font-size: 28px;
+
+  font-size: 32px;
 
 }
 .Logo,.SearchBar,.joke,.concern,.alarm,.login,.store,.setting{
@@ -33,7 +34,7 @@ header{
   padding:0;
 }
 .Logo{
-  font-size: 30px;
+  font-size: 32px;
 }
 .shield{
   max-width: 50%;
@@ -104,21 +105,44 @@ header{
   margin:0 auto;
   text-align: center;
   margin-top:8%;
-  background-color: red;
+
 }
 .mypic{
   margin:0 auto;
-  width: 200px;
-  height: 200px;
-  background-color: yellow;
-  border: solid black 1px;
+  width: 220px;
+  height: 220px;
+  padding:0;
+
   border-radius: 50%;
 
 }
-.mycontent,.myreply,.sendgift{
-  margin-top:20%;
-
+.name{
+  margin-top:1%;
+  font-size: 41px;
 }
+.menulist{
+  margin-top: 5%;
+}
+.menulist button{
+  margin:1%;
+  border:none;
+  background-color: rgba(0,0,0,0);
+  font-family: 'sd';
+  font-size:32px;
+  opacity: 0.2;
+}
+
+#mycontent_text{
+  opacity: 1;
+}
+.hr{
+  width: 2%;
+  margin:0 auto;
+}
+.hide{
+  display: none;
+}
+
 @media screen and (max-width:1440px){
 
 }

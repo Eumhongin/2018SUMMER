@@ -2,8 +2,10 @@
 <html>
 
 <head>
+
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
 
@@ -15,6 +17,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/core.css">
+
+
 
 </head>
 
@@ -55,21 +59,22 @@
   <div class="container">
     <div class="info">
       <div class="mypic">
-        <img src="" alt="내면상">
+        <img src="img/flower.jpg" alt="내면상" style="border-radius:100%;width:100%;margin:0 auto;">
       </div>
       <div class="name">
         <span>EX87EKSJ</span>
 
       </div>
       <div class="menulist">
-        <button type="button" name="button">내가쓴 글</button>
-        <button type="button" name="button">내가쓴 댓글</button>
-        <button type="button" name="button">보낸 선물함</button>
+        <button id="mycontent_text" type="button" name="button" onclick="click_mycontent();">내가쓴 글</button>
+        <button id="myreply_text" type="button" name="button" onclick="click_myreply();">내가쓴 댓글</button>
+        <button id="sendgift_text" type="button" name="button" onclick="click_sendgift();">보낸 선물함</button>
       </div>
     </div>
+    <hr class="hr">
+    <div id="mycontent">
 
-    <div id="mycontent" class="mycontent">
-      <div id="main">
+      <div id="main" class="mycontent">
         <div class="box">
           <div class="content">
             <div class="shield">
@@ -273,13 +278,17 @@
         </div>
       </div>
     </div>
-    <div id="myreply" class="myreply">
-      <div id="main">
+    <div id="myreply">
+
+      <div id="main" class="myreply hide">
         <div class="box">
           <div class="content">
             <div class="shield">
               <div class="text">
+                asdasdasdasdasd
                 #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm xptmxm
+                asdasdsad
+                asdasdasd
               </div>
             </div>
 
@@ -478,13 +487,15 @@
         </div>
       </div>
     </div>
-    <div id="sendgift" class="sendgift">
-      <div id="main">
+    <div id="sendgift">
+
+      <div id="main" class="sendgift hide">
         <div class="box">
           <div class="content">
             <div class="shield">
               <div class="text">
-                #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm xptmxm
+                qweqweqweqweqweqe
+                #알람 #행동 #가방 ssss안녕하세요 저는 서울사는 친구입니다. 안녕하세여 #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm xptmxm
               </div>
             </div>
 
@@ -494,7 +505,7 @@
           <div class="content">
             <div class="shield">
               <div class="text">
-                #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm
+                #알람 #행동 #가방 안녕하세요 저dddsdsdsd는 서울사는 친구입니다. 안녕하세여 xptmxm
               </div>
             </div>
 
@@ -686,209 +697,7 @@
 
 
 
-    <!-- <div id="main">
-      <div class="box">
-        <div class="content">
-          <div class="shield">
-            <div class="text">
-              #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm xptmxm
-            </div>
-          </div>
 
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <div class="shield">
-            <div class="text">
-              #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <div class="shield">
-            <div class="text">
-              #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm xptmxm #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <div class="shield">
-            <div class="text">
-              #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여
-
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <div class="shield">
-            <div class="text">
-              asdasdsad
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <div class="shield">
-            <div class="text">
-              #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <div class="shield">
-            <div class="text">
-              #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <div class="shield">
-            <div class="text">
-              #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <div class="shield">
-            <div class="text">
-              #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <div class="shield">
-            <div class="text">
-              #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <div class="shield">
-            <div class="text">
-              #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <div class="shield">
-            <div class="text">
-              #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <div class="shield">
-            <div class="text">
-              #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <div class="shield">
-            <div class="text">
-              #알람 #행동 #가방 안녕하세요 저 xptmxm #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <div class="shield">
-            <div class="text">
-              #알람 #행동 #가방 xptmxm #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <div class="shield">
-            <div class="text">
-              #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm # xptmxm
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <div class="shield">
-            <div class="text">
-
-              안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <div class="shield">
-            <div class="text">
-              #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm #알람 #행동 #가방안녕하세여 xptmxm
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <div class="shield">
-            <div class="text">
-              #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. xptmxm #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <div class="shield">
-            <div class="text">
-              #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm xptmxm
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
   </div>
 
@@ -903,14 +712,6 @@
     </div>
 
   </div>
-  <script type="text/javascript">
-  var mycontent = document.getElementById("mycontent");
-  var myreply = document.getElementById("myreply");
-  var sendgift = document.getElementById("sendgift");
-
-
-  </script>
-
   <script>
     // var textxontent = $(".text").text();
     // console.log(textxontent);
@@ -920,116 +721,125 @@
 
     //알람작업
 
-    $(window).on('load', function() {
-      window.onresize = function() {
-        location.reload();
-      }
-      waterFall();
-      var dataInt = {
-        "data": [{
-          "src": "0.jpg"
-        }, {
-          "src": "1.jpg"
-        }, {
-          "src": "2.jpg"
-        }, {
-          "src": "3.jpg"
-        }]
-      };
-      $(window).on('scroll', function() {
-        if (checkScrollSlide()) {
-          $.each(dataInt.data, function() {
-            var tt = " #알람 #행동 #가방<br>안녕하세요 저는 서울사는 친구입니다.<br>안녕하세여<br> 안녕하세요 저는 서울사는 친구입니다.<br>안녕하세요 저는 서울사는 친구입니다.<br>안녕하세요 저는 서울사는 친구입니다.<br>안녕하세요 저는 서울사는 친구입니다.<br>안녕하세요 저는 서울사는 친구입니다.<br>xptmxm<br>";
-            var oBox = $('<div>').addClass('box').appendTo($('#main'));
-            var oPic = $('<div>').addClass('content').appendTo(oBox);
-            var oshield = $('<div>').addClass('shield').appendTo(oPic);
-            $('<div>').addClass('text1').append(tt).appendTo(oshield);
-          });
+  $(window).on('load', function() {
+    window.onresize = function() {
+      location.reload();
+    }
+    waterFall();
+
+    $(window).on('scroll', function() {
+      if (checkScrollSlide()) {
+
+
+          var tt = " #알람 #행동 #가방<br>안녕하세요 저는 서울사는 친구입니다.<br>안녕하세여<br> 안녕하세요 저는 서울사는 친구입니다.<br>안녕하세요 저는 서울사는 친구입니다.<br>안녕하세요 저는 서울사는 친구입니다.<br>안녕하세요 저는 서울사는 친구입니다.<br>안녕하세요 저는 서울사는 친구입니다.<br>xptmxm<br>";
+          var oBox = $('<div>').addClass('box').appendTo($('#main'));
+          var oPic = $('<div>').addClass('content').appendTo(oBox);
+          var oshield = $('<div>').addClass('shield').appendTo(oPic);
+          $('<div>').addClass('text1').append(tt).appendTo(oshield);
           waterFall();
-        }
-      });
-    });
-
-    function waterFall() {
-      var $boxs = $('#main>div');
-
-      //alert($(document).outerWidth());
-      var w = parseFloat($(document).outerWidth() * parseFloat('0.6') / parseInt('4')); //박스의 넓이를 계산
-
-      //alert(w);
-      if ($(window).width() > 1024)
-        var cols = Math.floor('4'); //윈도우창 전체의 넓이에서 박스의 넓이를 나눔.
-      else {
-        var cols = Math.floor('3');
       }
-      //$("#main").width().css('margin','0 auto');	//박스의 넓이랑 컬럼의 갯수를 생각해서 곱함.
-      //메인 크기만듬 이제 컬럼 4개넣으면됨.
-      $boxs.width($('#main').outerWidth() * 0.9 / cols);
-      var boxwid = $boxs.outerWidth();
+    });
+  });
 
+  function waterFall() {
 
-
-      //var w=$('.container').outerWidth();
-      //alert(w);
-      //var res = parseInt("4");
-      //var w = $('.container').outerWidth()/res;
-      //var cols=parseInt('5');
-      //  console.log(res);
-      //  console.log(w);
-      //console.log('cols = '+cols);
-
-      //alert($(window).width());
-      //	alert($(window).width());
-      //$("#main").width(cols).css('margin','0 auto');	//메인박스 크기구하는거 스타일까지 세팅끝
-
-      //$(".box").width($('.container').width()/cols);
-
-
-      var hArr = [];
-
-      $boxs.each(function(index, value) {
-
-        var h = $boxs.eq(index).outerHeight(); //각박스의 높이같음.
-        //console.log(index);
-        //console.log(h);
-        //alert(h);
-
-        if (index < cols) {
-          //  console.log(cols);
-          hArr.push(h);
-          //  console.log(hArr.length);
-        } else {
-          minH = Math.min.apply(null, hArr); //Math안에있는 min안에 hArr안 배열의 최솟값
-          //  console.log('배열의 값은 '+hArr+'minH is ='+ minH);
-          //  console.log(minH);
-          var minHeightIndex = $.inArray(minH, hArr);
-
-          //  console.log(value)
-          //  console.log(minHeightIndex);
-          //  console.log(boxwid);
-          //  console.log(minHeightIndex*boxwid);
-          $(value).css({
-
-            'position': 'absolute',
-            'top': minH + 'px',
-            'left': minHeightIndex * boxwid + 'px'
-
-          });
-          hArr[minHeightIndex] += $boxs.eq(index).outerHeight();
+    var $boxs = $('#main>div');
+    var w = parseFloat($(document).outerWidth() * parseFloat('0.6') / parseInt('4')); //박스의 넓이를 계산
+    if ($(window).width() > 1440)
+      var cols = Math.floor('4'); //윈도우창 전체의 넓이에서 박스의 넓이를 나눔.
+    else {
+      if ($(window).width() > 1024)
+        var cols = Math.floor('3'); //윈도우창 전체의 넓이에서 박스의 넓이를 나눔.
+      else {
+        if ($(window).width() > 768)
+          var cols = Math.floor('2'); //윈도우창 전체의 넓이에서 박스의 넓이를 나눔.
+        else {
+          var cols = Math.floor('1');
         }
-      });
-      //console.log(hArr);
+      }
     }
+    //$("#main").width().css('margin','0 auto');	//박스의 넓이랑 컬럼의 갯수를 생각해서 곱함.
+    //메인 크기만듬 이제 컬럼 4개넣으면됨.
+    $boxs.width($('#main').outerWidth() * 0.94 / cols);
+    var boxwid = $boxs.outerWidth();
+    var hArr = [];
 
-    function checkScrollSlide() {
-      var $lastBox = $('.box').last();
-      var lastBoxDis = $lastBox.offset().top + Math.floor($lastBox.outerHeight() / 2);
-      var scrollTop = $(window).scrollTop();
-      var documentH = $(window).height();
-      return (lastBoxDis < scrollTop + documentH) ? true : false;
+    $boxs.each(function(index, value) {
+      var h = $boxs.eq(index).outerHeight(); //각박스의 높이같음.
+      if (index < cols) {
+        hArr.push(h);
+      } else {
+        minH = Math.min.apply(null, hArr); //Math안에있는 min안에 hArr안 배열의 최솟값
+        //  console.log('배열의 값은 '+hArr+'minH is ='+ minH);
+        var minHeightIndex = $.inArray(minH, hArr);
+        $(value).css({
 
-    }
+          'position': 'absolute',
+          'top': minH + 'px',
+          'left': minHeightIndex * boxwid + 'px'
+
+        });
+        hArr[minHeightIndex] += $boxs.eq(index).outerHeight();
+      }
+    });
+    //console.log(hArr);
+  }
+
+  function checkScrollSlide() {
+    var $lastBox = $('.box').last();
+    var lastBoxDis = $lastBox.offset().top + Math.floor($lastBox.outerHeight() / 2);
+    var scrollTop = $(window).scrollTop();
+    var documentH = $(window).height();
+    return (lastBoxDis < scrollTop + documentH) ? true : false;
+
+  }
+
+
   </script>
+  <script type="text/javascript">
+  var mycontent = document.getElementsByClassName("mycontent");
+  var myreply = document.getElementsByClassName("myreply");
+  var sendgift = document.getElementsByClassName("sendgift");
+  var mycontent_text = document.getElementById("mycontent_text");
+  var myreply_text = document.getElementById("myreply_text");
+  var sendgift_text = document.getElementById("sendgift_text");
+
+  function click_mycontent(){
+    mycontent_text.style.opacity = "1.0";
+    myreply_text.style.opacity = "0.2";
+    sendgift_text.style.opacity = "0.2";
+    mycontent[0].classList.remove("hide");
+    myreply[0].classList.add("hide");
+    sendgift[0].classList.add("hide");
+    waterFall();
+
+
+  }
+
+function click_myreply(){
+  mycontent_text.style.opacity = "0.2";
+  myreply_text.style.opacity = "1";
+  sendgift_text.style.opacity = "0.2";
+  mycontent[0].classList.add("hide");
+  myreply[0].classList.remove("hide");
+  sendgift[0].classList.add("hide");
+  waterFall();
+}
+function click_sendgift(){
+  mycontent_text.style.opacity = "0.2";
+  myreply_text.style.opacity = "0.2";
+  sendgift_text.style.opacity = "1.0";
+  mycontent[0].classList.add("hide");
+  myreply[0].classList.add("hide");
+  sendgift[0].classList.remove("hide");
+  waterFall();
+
+}
+
+
+  </script>
+
+
 </body>
 
 </html>
