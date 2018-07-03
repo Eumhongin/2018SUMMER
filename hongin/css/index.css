@@ -1,3 +1,4 @@
+
 html,body{
   padding:0;
   margin:0;
@@ -6,27 +7,34 @@ html,body{
 
 }
 #main{
-
-  margin:0 auto;
   margin-top: 8%;
+  /* border : 1px solid black; */
 }
 header{
   height: 6%;
   position: fixed;
-  z-index: 9997;
+  z-index: 90;
   top:0;
   width: 100%;
   background-color: white;
   border-bottom:0.5px solid black;
   padding:0;
   padding-top:1%;
-
   font-size: 32px;
+
+}
+.text1,.text{
+  word-break: break-all;
+  font-size:2em;
 
 }
 .Logo,.SearchBar,.joke,.concern,.alarm,.login,.store,.setting{
   float: left;
+  color:#626262;
 
+}
+.container > *:hover{
+  color:black;
 }
 .container{
   margin-left: 5%;
@@ -34,17 +42,20 @@ header{
   padding:0;
 }
 .Logo{
+  color:black;
   font-size: 32px;
 }
 .shield{
-  max-width: 50%;
+  max-width: 65%;
   margin:0 auto;
-
 }
+.emoji_img{
+  width: 44%;
+}
+
 .box{
   text-align: center;
   border-radius: 8px;
-
 }
 .asidegroup{
   background-color: orange;
@@ -52,7 +63,10 @@ header{
   top:0;
   right:0;
   height: 100%;
-
+}
+.reply{
+  margin-top: 10%;
+  font-size:2em;
 }
 .aside{
   width: 40px;
@@ -67,7 +81,7 @@ header{
 .SearchBar{
 
   margin-left: 40px;
-  width: 46%;
+  width: 62%;
 }
 .SearchBar input{
   width: 100%;
@@ -79,27 +93,39 @@ header{
 
 }
 .joke {
-  margin-left: 20px;
+  margin-left: 3%;
 }
 
 .concern {
-  margin-left: 20px;
+  margin-left: 1%;
 }
 
 .login {
-  margin-left: 20px;
+
+  margin-left: 1.6%;
+}
+a{
+  text-decoration: none;
+
+}
+.login a{
+  color:#626262;
+  text-decoration: none;
+}
+.login a:hover{
+  color: black;
 }
 
 .alarm {
-  margin-left: 20px;
+  margin-left: 1%;
 }
 
 .store {
-  margin-left: 20px;
+  margin-left: 1%;
 }
 
 .setting {
-  margin-left: 20px;
+  margin-left: 1%;
 }
 .info{
   margin:0 auto;
@@ -143,6 +169,55 @@ header{
   display: none;
 }
 
+
+.forlogin{
+  z-index:9988;
+  position: fixed;
+  background:rgba(0,0,0,0.67);
+
+  width: 100%;
+  height: 1080px;
+  top:0;
+  left:0;
+}
+.loginpop{
+  background-color: #3F3F3F;
+  box-shadow: 0 0 2px black;
+  border-radius: 16px;
+  width: 25%;
+  text-align: center;
+  margin:0 auto;
+  margin-top:10%;
+  height: 50%;
+
+}
+.img_login{
+  margin-top:5%;
+  width: 30%;
+
+}
+.comment_login{
+  font-size: 2em;
+  color:white;
+  margin-top:30px;
+}
+.ID,.pass{
+  width: 66%;
+  margin-top:5%;
+  border:none;
+  border-bottom:2px solid #ccc;
+  background: none;
+  font-family: 'sd';
+  font-size: 1.4em;
+}
+.Enter{
+  border:none;
+  background: none;
+  font-family: 'sd';
+  color:white;
+
+  font-size:2em;
+}
 @media screen and (max-width:1440px){
 
 }
