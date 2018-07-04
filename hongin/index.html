@@ -59,11 +59,11 @@
         <div class="content">
           <div class="shield">
             <form class="" action="index.html" method="post">
-              <div class="plus">
+              <div class="plus" style="font-size:0.8em;margin-bottom:10px;">
                 +
               </div>
               <div class="text">
-                <textarea name="name" rows="8" cols="80" style="width:100%;resize:none"></textarea>
+                <textarea name="name" rows="8" cols="80" style="width:100%;resize:none;text-align:center;border:none;font-family:'sd';font-size:0.8em;" placeholder="오늘의 고민을 적어볼까요??"></textarea>
 
               </div>
               <button type="submit" name="button">새글 쓰기</button>
@@ -294,26 +294,16 @@
         location.reload();
       }
       waterFall();
-      var dataInt = {
-        "data": [{
-          "src": "0.jpg"
-        }, {
-          "src": "1.jpg"
-        }, {
-          "src": "2.jpg"
-        }, {
-          "src": "3.jpg"
-        }]
-      };
+
       $(window).on('scroll', function() {
         if (checkScrollSlide()) {
-          $.each(dataInt.data, function() {
+
             var tt = " #알람 #행동 #가방<br>안녕하세요 저는 서울사는 친구입니다.<br>안녕하세여<br> 안녕하세요 저는 서울사는 친구입니다.<br>안녕하세요 저는 서울사는 친구입니다.<br>안녕하세요 저는 서울사는 친구입니다.<br>안녕하세요 저는 서울사는 친구입니다.<br>안녕하세요 저는 서울사는 친구입니다.<br>xptmxm<br>";
             var oBox = $('<div>').addClass('box').appendTo($('#main'));
             var oPic = $('<div>').addClass('content').appendTo(oBox);
             var oshield = $('<div>').addClass('shield').appendTo(oPic);
             $('<div>').addClass('text1').append(tt).appendTo(oshield);
-          });
+
           waterFall();
         }
       });
