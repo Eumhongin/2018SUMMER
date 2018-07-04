@@ -9,8 +9,8 @@
     <hr>
     <div id="content"class="content">
 
-    <form action="login.php" method="post">
-      <input type="email" name="LOG_id" required>
+    <form action="test.php" method="post">
+      <input type="text" name="LOG_id" >
       <input type="password" name="LOG_pw" required>
       <button type="submit">Login</button>
     </form>

@@ -1,0 +1,130 @@
+html,body{
+  padding:0;
+  margin:0;
+  width: 100%;
+  font-family: 'sd';
+
+}
+#main{
+  width: 80%;
+  margin:0 auto;
+  margin-top: 8%;
+}
+header{
+  height: 6%;
+  position: fixed;
+  z-index: 9997;
+  top:0;
+  width: 100%;
+  background-color: white;
+  border-bottom:0.5px solid black;
+  padding:0;
+  padding-top:1%;
+  font-size: 28px;
+
+}
+.Logo,.SearchBar,.joke,.concern,.alarm,.login,.store,.setting{
+  float: left;
+
+}
+.container{
+  margin-left: 5%;
+  margin-right: 5%;
+  padding:0;
+}
+.Logo{
+  font-size: 30px;
+}
+.shield{
+  max-width: 50%;
+  margin:0 auto;
+
+}
+.box{
+  text-align: center;
+  border-radius: 8px;
+
+}
+.asidegroup{
+  background-color: orange;
+  position: fixed;
+  top:0;
+  right:0;
+  height: 100%;
+
+}
+.aside{
+  width: 40px;
+  top:20%;
+  height: 10%;
+  background-color: red;
+  position: absolute;
+  left: -40px;
+  text-align: center;
+}
+
+.SearchBar{
+
+  margin-left: 40px;
+  width: 46%;
+}
+.SearchBar input{
+  width: 100%;
+  border-radius: 5px;
+  border:none;
+  border:1px solid #626262;
+  background-color: #EFEFEF;
+  height:30px;
+
+}
+.joke {
+  margin-left: 20px;
+}
+
+.concern {
+  margin-left: 20px;
+}
+
+.login {
+  margin-left: 20px;
+}
+
+.alarm {
+  margin-left: 20px;
+}
+
+.store {
+  margin-left: 20px;
+}
+
+.setting {
+  margin-left: 20px;
+}
+.info{
+  margin:0 auto;
+  text-align: center;
+  margin-top:8%;
+  background-color: red;
+}
+.mypic{
+  margin:0 auto;
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  border: solid black 1px;
+  border-radius: 50%;
+
+}
+.mycontent,.myreply,.sendgift{
+  margin-top:20%;
+
+}
+@media screen and (max-width:1440px){
+
+}
+@media screen and (max-width:1024px){
+
+}
+@media screen and (max-width:768px){
+
+}
