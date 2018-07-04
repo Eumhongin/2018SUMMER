@@ -1,0 +1,24 @@
+.asidegroup{
+  background-color: orange;
+  position: fixed;
+  top:0;
+  right:0;
+  height: 100%;
+  width: 14%;
+}
+
+.aside{
+  width: 40px;
+  top:20%;
+  height: 10%;
+  background-color: red;
+  position: absolute;
+  left: -40px;
+  text-align: center;
+}
+.SearchBar_Mate{
+
+  margin-top: 50%;
+  width: 100%;
+
+}

@@ -15,10 +15,40 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/core.css">
+  <link rel="stylesheet" href="css/Mate.css">
+
+
 
 </head>
 
 <body>
+  <!-- login fade out link by login.js-->
+  <div class="forlogin hide">
+    <form class="loginpop" action="index.html" method="post">
+      <img class="img_login" src="img/flower.jpg" alt="로고사진">
+      <br>
+      <span class="comment_login">Introducing comment<br></span>
+      <br>
+      <input class="ID" type="email" placeholder="이메일" required>
+      <br>
+      <input class="pass" type="text" placeholder="비밀번호" required>
+      <br>
+      <button class="Enter" type="submit" name="button">로그인</button>
+
+    </form>
+  </div>
+  <!-- For mobile menu UNDER 768px -->
+  <div class="M-menu">
+    <img src="img/flower.jpg" alt="">
+    <ul>
+      <li>잡담</li>
+      <li>고민</li>
+      <li>상점</li>
+      <li>설정</li>
+
+    </ul>
+  </div>
+  <!-- basic tap to all page -->
   <header class="row">
     <div class="container">
       <div class="Logo">
@@ -50,8 +80,7 @@
     </div>
 
   </header>
-
-  <!-- container -->
+  <!-- container contain every comments(Worrylist, etc...) -->
   <div class="container">
 
     <div id="main">
@@ -66,6 +95,10 @@
                 <textarea name="name" rows="8" cols="80" style="width:100%;resize:none;text-align:center;border:none;font-family:'sd';font-size:0.8em;" placeholder="오늘의 고민을 적어볼까요??"></textarea>
 
               </div>
+              <input type="checkbox" name="" value="" checked>
+              <span style="font-size:1.2em;">24시간뒤 사라지게하기</span>
+              <input type="checkbox" name="" value="" checked>
+              <span style="font-size:1.2em;">댓글금지</span>
               <button type="submit" name="button">새글 쓰기</button>
             </div>
             </form>
@@ -267,8 +300,17 @@
     </div>
   </div>
 
-  <!-- side bar CODE_NAME = MATE -->
+  <!-- side bar CODE_NAME = MATE.css -->
   <div class="asidegroup">
+    <input class="SearchBar_Mate" type="text" name="" value="">
+    <div class="matelist">
+      <img class="Mate_img" src="" alt="">
+      <span class="Mate_Name"></span>
+      <div class="online_circle">
+
+      </div>
+    </div>
+
     <div class="aside">
       M<br>
       A<br>
@@ -279,7 +321,7 @@
 
   </div>
 
-
+  <script src="js/login.js" charset="utf-8"></script>
   <script>
     // var textxontent = $(".text").text();
     // console.log(textxontent);
