@@ -90,6 +90,8 @@ header{
   border:1px solid #626262;
   background-color: #EFEFEF;
   height:30px;
+  font-family: 'sd';
+  font-size: 0.8em;
 
 }
 .joke {
@@ -179,12 +181,13 @@ a{
   height: 1080px;
   top:0;
   left:0;
+  opacity: 0;
 }
 .loginpop{
   background-color: #3F3F3F;
   box-shadow: 0 0 2px black;
   border-radius: 16px;
-  width: 25%;
+  width: 20%;
   text-align: center;
   margin:0 auto;
   margin-top:10%;
@@ -192,8 +195,9 @@ a{
 
 }
 .img_login{
-  margin-top:5%;
+  margin-top:10%;
   width: 30%;
+  margin-bottom: 30%;
 
 }
 .comment_login{
@@ -209,21 +213,67 @@ a{
   background: none;
   font-family: 'sd';
   font-size: 1.4em;
+  color: white;
 }
 .Enter{
   border:none;
   background: none;
   font-family: 'sd';
   color:white;
+  margin-top:4%;
 
   font-size:2em;
+  width: 66%;
+  height: 8%;
+
 }
-@media screen and (max-width:1440px){
+.M-menu{
+  visibility: hidden;
+  position: fixed;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  background-color: red;
+
+}
+.M-menu img{
+  right: 0;
+  width: 5%;
+}
+
+.M-menu ul{
+  width: 5%;
+  margin-top:1px;
+}
+.M-menu li{
+  margin-top:3px;
+}
+@media screen and (max-width:1600px){
+  .SearchBar{
+    width: 50%;
+  }
 
 }
 @media screen and (max-width:1024px){
-
+  .SearchBar{
+    width: 35%;
+  }
 }
 @media screen and (max-width:768px){
+  .SearchBar{
+    width: 55%;
+  }
+  .joke,.concern,.store,.setting,.login,.alarm{
+    display: none;
+  }
+  header{
+    height: 48px;
+  }
+  .info{
+    margin-top:14%;
+  }
+  .M-menu{
+    visibility: hidden;
 
+  }
 }

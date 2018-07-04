@@ -10,8 +10,11 @@
   <title></title>
 
   <link rel="stylesheet" href="font/font.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <!-- <script src="js/script.js"></script> -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
 
   <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/style.css">
@@ -19,9 +22,26 @@
   <link rel="stylesheet" href="css/core.css">
   <script>
   $(document).ready(function(){
+
     $('.login').on('click',function(){
       document.getElementsByClassName("forlogin")[0].classList.remove("hide");
+      $('.forlogin').animate({opacity:'1'},300);
     });
+    $(document).keyup(function(e) {
+      //if (e.keyCode === 13) $('.save').click();     // enter
+      if (e.keyCode === 27&&!(document.getElementsByClassName("forlogin")[0].classList.contains("hide")))
+      {
+          document.getElementsByClassName("forlogin")[0].classList.add("hide");
+          $('.forlogin').css("opacity","0");
+      }
+
+    });
+    $('.forlogin').on('click',function(){
+      document.getElementsByClassName("forlogin")[0].classList.add("hide");
+
+
+    });
+
 
   });
 
@@ -36,19 +56,25 @@
     <form class="loginpop" action="index.html" method="post">
       <img class="img_login" src="img/flower.jpg" alt="로고사진">
       <br>
-      <span class="comment_login">고민은 나눌때 지워집니다.<br>
-        <br>
-
-당신의 고민은<br><br>
-누구와 나누었나요?</span>
+      <span class="comment_login">Introducing comment<br></span>
       <br>
-      <input class="ID" type="email" name="" value="" placeholder="이메일" required>
+      <input class="ID" type="email" placeholder="이메일" required>
       <br>
-      <input class="pass" type="text" name="" value="" placeholder="비밀번호" required>
+      <input class="pass" type="text" placeholder="비밀번호" required>
       <br>
       <button class="Enter" type="submit" name="button">로그인</button>
 
     </form>
+  </div>
+  <div class="M-menu">
+    <img src="img/flower.jpg" alt="">
+    <ul>
+      <li>잡담</li>
+      <li>고민</li>
+      <li>상점</li>
+      <li>설정</li>
+      
+    </ul>
   </div>
   <header class="row">
     <div class="container">
@@ -83,7 +109,7 @@
   </header>
 
   <!-- container -->
-  <div class="container">
+  <div class="container m-container">
     <div class="info">
       <div class="mypic">
         <img src="img/flower.jpg" alt="내면상" style="border-radius:100%;width:100%;margin:0 auto;">
