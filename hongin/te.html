@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <textarea id="ar" name="name" rows="8" cols="80"></textarea>
+    <button type="submit" name="button" onclick="ar();">change</button>
+    <div class="hong">
+
+    </div>
+    <script type="text/javascript">
+    function ar(){
+      var ar = document.getElementById("ar");
+      var hong = document.getElementsByClassName('hong');
+      var comment = $('#ar').val();
+      //alert($('#ar').val());
+      if(comment.includes('\'')){
+        comment = comment.replace(/a|\0/g,'&#39;');
+
+
+        hong[0].innerHTML = comment;
+      }
+
+    }
+
+
+
+    </script>
+
+  </body>
+</html>
