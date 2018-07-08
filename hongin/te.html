@@ -1,35 +1,25 @@
-
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title></title>
-  </head>
-  <body>
-    <textarea id="ar" name="name" rows="8" cols="80"></textarea>
-    <button type="submit" name="button" onclick="ar();">change</button>
-    <div class="hong">
+<html>
+<body>
 
-    </div>
-    <script type="text/javascript">
-    function ar(){
-      var ar = document.getElementById("ar");
-      var hong = document.getElementsByClassName('hong');
-      var comment = $('#ar').val();
-      //alert($('#ar').val());
-      if(comment.includes('\'')){
-        comment = comment.replace(/a|\0/g,'&#39;');
+<h2>Get data as JSON from a PHP file on the server.</h2>
 
+<p id="demo"></p>
 
-        hong[0].innerHTML = comment;
-      }
+<script>
 
+var xmlhttp = new XMLHttpRequest();
+
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        myObj = JSON.parse(this.responseText);
+        document.getElementById("demo").innerHTML = myObj.name[1];
     }
+};
+xmlhttp.open("GET", "demo.php", true);
+xmlhttp.send();
 
+</script>
 
-
-    </script>
-
-  </body>
+</body>
 </html>

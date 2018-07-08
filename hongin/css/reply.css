@@ -1,0 +1,9 @@
+.reply_text,.reply_wrap{
+  display: none;
+
+}
+.reply_text{
+  position: relative;
+  background-color: white;
+  z-index: 9999;
+}
