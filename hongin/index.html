@@ -22,16 +22,6 @@
   var aside = document.getElementsByClassName("aside");
   var asidegroup = document.getElementsByClassName("asidegroup");
   $(document).ready(function(){
-    $('.reply').click(function(){
-
-      $('.reply_wrap').slideToggle("200");
-
-
-      $('.reply_text').show();
-
-
-
-    });
 
 
     $('.asidegroup').css({"height":$(window).outerHeight()-$('header').outerHeight(),'top':$('header').outerHeight(),'right':-$('.asidegroup').outerWidth()});
@@ -63,6 +53,23 @@
 </head>
 
 <body>
+  <!-- reply form default = hide-->
+  <div class="click_list hide">
+    <div class="click_list_content row container">
+      <div class="list_content">
+        <div class="content_shield">
+          ddddddd
+        </div>
+      </div>
+      <div class="reply">
+        <div class="reply_shield">
+          ddddddd
+        </div>
+
+      </div>
+
+    </div>
+  </div>
   <!-- login fade out link by login.js-->
 
   <form class="loginpop hide" action="index.html" method="post">
@@ -157,46 +164,7 @@
             <div class="text">
               #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm xptmxm #알람 #행동 #가방 안녕하세요 저는 서울사는 친구입니다. 안녕하세여 xptmxm
             </div>
-            <div class="reply">
-              댓글
-            </div>
-            <div class="reply_wrap">
-              <div class="reply_text">
-                굳ㅁㅇㅈㅇㅁㅇㅈㅇㅁㅇㅁㅈㅇㅁㅈㅇㅇㅈㅇ
-
-              </div>
-              <div class="reply_text">
-                굳ㅁㅇㅈㅇㅁㅇㅈㅇㅁㅇㅁㅈㅇㅁㅈㅇㅇㅈㅇ
-
-              </div>
-              <div class="reply_text">
-                굳ㅁㅇㅈㅇㅁㅇㅈㅇㅁㅇㅁㅈㅇㅁㅈㅇㅇㅈㅇ
-
-              </div>
-              <div class="reply_text">
-                굳ㅁㅇㅈㅇㅁㅇㅈㅇㅁㅇㅁㅈㅇㅁㅈㅇㅇㅈㅇ
-
-              </div>
-              <div class="reply_text">
-                굳ㅁㅇㅈㅇㅁㅇㅈㅇㅁㅇㅁㅈㅇㅁㅈㅇㅇㅈㅇ
-
-              </div>
-              <div class="reply_text">
-                굳ㅁㅇㅈㅇㅁㅇㅈㅇㅁㅇㅁㅈㅇㅁㅈㅇㅇㅈㅇ
-
-              </div>
-              <div class="reply_text">
-                굳ㅁㅇㅈㅇㅁㅇㅈㅇㅁㅇㅁㅈㅇㅁㅈㅇㅇㅈㅇ
-
-              </div>
-              <div class="reply_text">
-                굳ㅁㅇㅈㅇㅁㅇㅈㅇㅁㅇㅁㅈㅇㅁㅈㅇㅇㅈㅇ
-
-              </div>
-
-            </div>
           </div>
-
         </div>
       </div>
       <div class="box">
@@ -659,7 +627,7 @@
               var oshield = $('<div>').addClass('shield').appendTo(oPic);
               $('<img src="img/flower.jpg" alt="이미지">').addClass('emoji_img').appendTo(oshield);
               $('<div>').addClass('text').append(tt[0]).appendTo(oshield);
-              $('<div>').addClass('reply').append("댓글").appendTo(oshield);
+              //$('<div>').addClass('reply').append("댓글").appendTo(oshield);
                 waterFall();
             //}
 
@@ -757,6 +725,7 @@
 
   </script>
   <script src="js/worry_to_story.js" charset="utf-8"></script>
+  <script src="js/reply.js" charset="utf-8"></script>
 
 
 </body>
