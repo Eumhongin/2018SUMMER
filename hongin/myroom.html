@@ -19,13 +19,35 @@
   <link rel="stylesheet" href="css/core.css">
     <link rel="stylesheet" href="css/Mate.css">
     <script>
+
+    var aside = document.getElementsByClassName("aside");
+    var asidegroup = document.getElementsByClassName("asidegroup");
     $(document).ready(function(){
-      $('.reply').on('click',function(){
-        document.getEle
+
+
+      $('.asidegroup').css({"height":$(window).outerHeight()-$('header').outerHeight(),'top':$('header').outerHeight(),'right':-$('.asidegroup').outerWidth()});
+
+      $('.aside').on('click',function(){
+        if(asidegroup[0].classList.contains("close"))
+        {
+          //alert($('.asidegroup').outerWidth());
+          $('.asidegroup').animate({right:'0'},300);
+          asidegroup[0].classList.remove("close");
+          asidegroup[0].classList.add("open");
+
+        }
+        else {
+          $('.asidegroup').animate({right:-$('.asidegroup').outerWidth()},300);
+          asidegroup[0].classList.add("close");
+          asidegroup[0].classList.remove("open");
+        }
+
       });
     });
 
+
     </script>
+
 
 
 </head>
@@ -734,16 +756,23 @@
   </div>
 
   <!-- side bar CODE_NAME = MATE -->
-  <div class="asidegroup">
+  <div class="asidegroup close">
+    <input class="SearchBar_Mate" oninput="updateResult(this.value)" type="search" placeholder="메이트를 검색해 보세요" />
+
+    <ul class="matelist">
+    </ul>
+
+
     <div class="aside">
-      M<br> A
-      <br> T
-      <br> E
-      <br>
+      M<br>
+      A<br>
+      T<br>
+      E<br>
 
     </div>
 
   </div>
+  <script src="js/Mate.js" charset="utf-8"></script>
   <script>
   var flag = true;
   var main;
@@ -775,7 +804,7 @@
           var oshield = $('<div>').addClass('shield').appendTo(oPic);
           $('<img src="img/flower.jpg" alt="이미지">').addClass('emoji_img').appendTo(oshield);
           $('<div>').addClass('text1').append(tt).appendTo(oshield);
-          $('<div>').addClass('reply').append("댓글").appendTo(oshield);
+
           console.log("water fall 2!!");
 
           waterFall();

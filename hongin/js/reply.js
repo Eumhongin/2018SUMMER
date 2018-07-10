@@ -9,7 +9,7 @@ $(document).ready(function(){
   });
   $(document).keyup(function(e) {
     //if (e.keyCode === 13) $('.save').click();     // enter
-    if (e.keyCode === 27&&!(document.getElementsByClassName("forlogin")[0].classList.contains("hide")))
+    if (e.keyCode === 27&&!(document.getElementsByClassName("click_list")[0].classList.contains("hide")))
     {
         document.getElementsByClassName("forlogin")[0].classList.add("hide");
         document.getElementsByClassName("click_list")[0].classList.add("hide");

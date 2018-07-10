@@ -1,18 +1,121 @@
 .click_list{
   background-color: white;
-  width: 70%;
-  min-height:500px;
-  opacity: 0;
+  width: 60%;
+  min-height:400px;
+  opacity: ;
   position: fixed;
   z-index: 9999;
-  left: 15%;
+  left: 20%;
   top:10%;
+  border-radius: 16px;
 }
-.list_content,.reply{width: 48%;margin:1%;float: left;}
+.vi{
+  position: absolute;
+  height: 400px;
+  border-right: solid 1px black;
+  left: 49.9%;
+  top:11.2%;
+}
+.click_list_content{
 
-.content_shield{
-  background-color: yellow;
+  margin:7%;
 }
-.reply_shield{
-  background-color: green;
+
+.content_left{
+  max-height: 400px;
+  text-align:center;
+}
+.content_shield{
+  padding:10%;
+  padding-left: 0;
+  padding-top:0;
+}
+.content_right{
+
+  overflow-y: scroll;
+  max-height: 400px;
+}
+.content_text{
+  margin-top: 10%;
+  margin-bottom: 5%;
+  line-height: 1.6;
+  font-size: 1.2em;
+}
+.content_thanks{
+  position: absolute;
+  right: 50%;
+  top:79%;
+}
+.content_thanks img{
+  width: 20%;
+  margin-top: 10%;
+  margin-left: 30%;
+}
+.content_thanks_count{
+  position: absolute;
+  font-size: 1.7em;
+  margin-left: 5%;
+  top:27%;
+}
+.reply_box{
+  margin:5%;
+
+}
+.reply_wrapper{
+  background-color: #f2f2f2;
+  min-height: 50px;
+  padding:8px;
+  border-radius: 7px;
+  margin:5px;
+
+}
+.reply_left{
+  float:left;
+  font-size: auto;
+  width: 80%;
+}
+.report{
+
+  float: left;
+  width: 20%;
+}
+.report img{
+  margin-left: 80%;
+  width: 20%;
+}
+.bottom_side{
+
+}
+.bottom_side *{
+  float: left;
+}
+.reply_thanks{
+  margin-left: 3%;
+  width: 5%;
+}
+.reply_thanks img{
+  width: 100%;
+}
+.reply_thx_count{
+  margin-left: 1%;
+}
+.last_date{
+  margin-left: 80%;
+}
+.reply_reply_box{
+  width: 80%;
+  margin-left: 20%;
+}
+.identified_writer{
+  float: left;
+  width: 1%;
+  padding-top:13px;
+
+
+}
+.identified_writer span{
+
+}
+.reply_reply_wrapper{
+
 }
