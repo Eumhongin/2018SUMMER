@@ -1,122 +1,56 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title></title>
-    <script>
-    $(document).ready(function() {
-
-      $('.te').click(function(){
-        $('.d1').animate({opacity:"1"}, 1000);
-        $('.d2').animate({opacity:"1"}, 1000);
-        $('.d3').animate({opacity:"1"}, 1000);
-        $('.d4').animate({opacity:"1"}, 1000);
-        $('.d5').animate({opacity:"1"}, 1000);
-      });
-})
-
-    </script>
-    <style media="screen">
-    html,body{
-
-      width: 100%;
-      margin:0;
-      padding:0;
-      height: 100%;
-    }
-      .A,.B,.C{
-        height: 400px;
-
-      }
-      .hide{
-        display: none;
-
-      }
-      footer{
-        top:100%;
-        width: 100%;
-        position: absolute;
-        transition: all 2s ease-out;
-        height: 0;
-        background-color: red;
-        margin:0;
-        padding:0;
-        visibility: hidden;
-      }
-      .coment{
-        position: sticky;
-        display: block;
-        margin-top:16%;
-        text-align: center;
-      }
-      span{
-        opacity: 0;
-
-
-      }
-      /* footer:hover{
-        transform: translate(0,-300px);
-        height:400px;
-
-      } */
-
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
-    <header>
-      hello
+    <div id="main">
 
-    </header>
-    <hr>
-<span class="test">Opacity test code</span>
-    <button type="button" name="button" onclick="go()">asdasd</button>
-    <div class="toggle">
-      <a href="#A" onclick="clickA()">A</a>
-      <a href="#B" onclick="clickB()">B</a>
-      <a href="#C" onclick="clickC()">C</a>
     </div>
-    <div id="A" class="A">
-      This is A
-    </div>
-    <div id="B" class="B hide">
-      THis is B
-    </div>
-    <div id="C" class="C hide">
-      THis is C
-    </div>
-    <footer id="foot">&nbsp;</footer>
-
-
     <script type="text/javascript">
-    var A = document.getElementById("A");
-    var B = document.getElementById("B");
-    var C = document.getElementById("C");
-    function clickA(){
-      A.classList.remove("hide");
-      B.classList.add("hide");
-      C.classList.add("hide");
-    }
-    function clickB(){
-      A.classList.add("hide");
-      B.classList.remove("hide");
-      C.classList.add("hide");
-    }
-    function clickC(){
-      A.classList.add("hide");
-      B.classList.add("hide");
-      C.classList.remove("hide");
-    }
-    function go(){
-      var foot = document.getElementById("foot");
-      foot.style.height="55%";
-      foot.style.transform = "translate(0,-100%)";
-      foot.style.visibility = "visible";
+    var arr = new Array(10);
+    for(var i=0;i<10;i++)
+    {
+      var oBox = $('<div>').addClass('box').appendTo($('#main'));
+      var oPic = $('<div>').addClass('content').appendTo(oBox);
+      document.getElementsByClassName('content')[0].innerHTML = i;
+      var arrmember = document.getElementsByClassName('content')[0].innerHTML;
+      arr[i] = arrmember;
+      $('.content').remove();
+      $('.box').remove();
 
     }
-
+      $('#main').remove();
+    document.write(arr);
 
     </script>
 
   </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Functions</h2>
+
+<p>This example calls a function which performs a calculation, and returns the result:</p>
+
+<p id="demo"></p>
+
+<div class="wdwd" onclick="oo(this)">
+  asdasd
+</div>
+<script>
+function myFunction(p1, p2) {
+    return p1 * p2;
+}
+document.getElementById("demo").innerHTML = myFunction(4, 3);
+function oo(sdsd){
+  alert(sdsd.innerHTML);
+}
+</script>
+
+</body>
 </html>

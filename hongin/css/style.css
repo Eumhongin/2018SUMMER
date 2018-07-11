@@ -6,7 +6,7 @@
 
 #main { position: relative; }
 
-.box {
+.box,.box1 {
   padding: 15px 0 0 15px;
   float: left;
 }

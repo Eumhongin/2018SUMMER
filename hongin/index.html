@@ -22,6 +22,33 @@
   var aside = document.getElementsByClassName("aside");
   var asidegroup = document.getElementsByClassName("asidegroup");
   $(document).ready(function(){
+    $('.box').on('click',function(){
+      document.getElementsByClassName("forlogin")[0].classList.remove("hide");
+      document.getElementsByClassName("click_list")[0].classList.remove("hide");
+      $('.forlogin').animate({opacity:'1'},300);
+      $('.click_list').animate({opacity:'1'},300);
+    });
+    $(document).keyup(function(e) {
+      //if (e.keyCode === 13) $('.save').click();     // enter
+      if (e.keyCode === 27&&!(document.getElementsByClassName("click_list")[0].classList.contains("hide")))
+      {
+          document.getElementsByClassName("forlogin")[0].classList.add("hide");
+          document.getElementsByClassName("click_list")[0].classList.add("hide");
+          $('.forlogin').css("opacity","0");
+          $('.click_list').css("opacity","0");
+      }
+
+    });
+    $('.forlogin').on('click',function(){
+      document.getElementsByClassName("forlogin")[0].classList.add("hide");
+      document.getElementsByClassName("click_list")[0].classList.add("hide");
+      $('.forlogin').css("opacity","0");
+      $('.click_list').css("opacity","0");
+
+
+    });
+
+
 
 
     $('.asidegroup').css({"height":$(window).outerHeight()-$('header').outerHeight(),'top':$('header').outerHeight(),'right':-$('.asidegroup').outerWidth()});
@@ -54,7 +81,7 @@
 <body>
 
   <!-- reply form default = hide-->
-  <div class="click_list">
+  <div class="click_list hide">
 
     <!-- vertival line -->
     <div class="vi">
@@ -65,7 +92,7 @@
       <!-- the text side is LEFT -->
       <div class="content_left col-2">
         <div class="content_shield">
-          <div class="content_text">
+          <div id="content_text" class="content_text">
             바보같아..<br>
             나도 힘든걸..<br>
             <br>
@@ -76,7 +103,7 @@
             -Oreuka<br>
 
           </div>
-          <div class="content_thanks row">
+          <div class="content_thanks row" onclick="todak(this)">
             <img src="img/thx_icon.png" alt="고마워요">
             <span class="content_thanks_count">3</span>
           </div>
@@ -98,12 +125,12 @@
                 <img src="img/siren.png" alt="신고">
               </div>
             </div>
-            <div class="bottom_side row">
+            <div class="bottom_side row" onclick="thx_increase(this)">
               <div class="reply_thanks">
                 <img src="img/thx_icon.png" alt="고마워요">
               </div>
               <div class="reply_thx_count">
-                <span>1</span>
+                <span class="reply_count">1</span>
               </div>
               <div class="last_date">
                 <span>3일전</span>
@@ -121,12 +148,12 @@
                 <img src="img/siren.png" alt="신고">
               </div>
             </div>
-            <div class="bottom_side row">
+            <div class="bottom_side row" onclick="thx_increase(this)">
               <div class="reply_thanks">
                 <img src="img/thx_icon.png" alt="고마워요">
               </div>
               <div class="reply_thx_count">
-                <span>1</span>
+                <span class="reply_count">1</span>
               </div>
               <div class="last_date">
                 <span>3일전</span>
@@ -157,12 +184,12 @@
                     <img src="img/siren.png" alt="신고">
                   </div>
                 </div>
-                <div class="bottom_side row">
+                <div class="bottom_side row" onclick="thx_increase(this)">
                   <div class="reply_thanks">
                     <img src="img/thx_icon.png" alt="고마워요">
                   </div>
                   <div class="reply_thx_count">
-                    <span>1</span>
+                    <span class="reply_count">1</span>
                   </div>
                   <div class="last_date">
                     <span>3일전</span>
@@ -183,12 +210,12 @@
                     <img src="img/siren.png" alt="신고">
                   </div>
                 </div>
-                <div class="bottom_side row">
+                <div class="bottom_side row" onclick="thx_increase(this)">
                   <div class="reply_thanks">
                     <img src="img/thx_icon.png" alt="고마워요">
                   </div>
                   <div class="reply_thx_count">
-                    <span>1</span>
+                    <span class="reply_count">1</span>
                   </div>
                   <div class="last_date">
                     <span>3일전</span>
@@ -213,12 +240,12 @@
                     <img src="img/siren.png" alt="신고">
                   </div>
                 </div>
-                <div class="bottom_side row">
+                <div class="bottom_side row" onclick="thx_increase(this)">
                   <div class="reply_thanks">
                     <img src="img/thx_icon.png" alt="고마워요">
                   </div>
                   <div class="reply_thx_count">
-                    <span>1</span>
+                    <span class="reply_count">1</span>
                   </div>
                   <div class="last_date">
                     <span>3일전</span>
@@ -241,12 +268,12 @@
                     <img src="img/siren.png" alt="신고">
                   </div>
                 </div>
-                <div class="bottom_side row">
+                <div class="bottom_side row" onclick="thx_increase(this)">
                   <div class="reply_thanks">
                     <img src="img/thx_icon.png" alt="고마워요">
                   </div>
                   <div class="reply_thx_count">
-                    <span>1</span>
+                    <span class="reply_count">1</span>
                     <!-- 고마워요 몇개 받았는지 -->
                   </div>
                   <div class="last_date">
@@ -273,36 +300,12 @@
                 <img src="img/siren.png" alt="신고">
               </div>
             </div>
-            <div class="bottom_side row">
+            <div class="bottom_side row" onclick="thx_increase(this)">
               <div class="reply_thanks">
                 <img src="img/thx_icon.png" alt="고마워요">
               </div>
               <div class="reply_thx_count">
-                <span>1</span>
-              </div>
-              <div class="last_date">
-                <span>3일전</span>
-              </div>
-            </div>
-          </div>
-          <!-- box end -->
-          
-          <!-- the block of reply -->
-          <div class="reply_box">
-            <div class="reply_wrapper row">
-              <div class="reply_left">
-                <span>생일 축하해요. 올해도 벅찬 날이 가득하길 바랄게요</span>
-              </div>
-              <div class="report">
-                <img src="img/siren.png" alt="신고">
-              </div>
-            </div>
-            <div class="bottom_side row">
-              <div class="reply_thanks">
-                <img src="img/thx_icon.png" alt="고마워요">
-              </div>
-              <div class="reply_thx_count">
-                <span>1</span>
+                <span class="reply_count">1</span>
               </div>
               <div class="last_date">
                 <span>3일전</span>
@@ -321,12 +324,36 @@
                 <img src="img/siren.png" alt="신고">
               </div>
             </div>
-            <div class="bottom_side row">
+            <div class="bottom_side row" onclick="thx_increase(this)">
               <div class="reply_thanks">
                 <img src="img/thx_icon.png" alt="고마워요">
               </div>
               <div class="reply_thx_count">
-                <span>1</span>
+                <span class="reply_count">1</span>
+              </div>
+              <div class="last_date">
+                <span>3일전</span>
+              </div>
+            </div>
+          </div>
+          <!-- box end -->
+
+          <!-- the block of reply -->
+          <div class="reply_box">
+            <div class="reply_wrapper row">
+              <div class="reply_left">
+                <span>생일 축하해요. 올해도 벅찬 날이 가득하길 바랄게요</span>
+              </div>
+              <div class="report">
+                <img src="img/siren.png" alt="신고">
+              </div>
+            </div>
+            <div class="bottom_side row" onclick="thx_increase(this)">
+              <div class="reply_thanks">
+                <img src="img/thx_icon.png" alt="고마워요">
+              </div>
+              <div class="reply_thx_count">
+                <span class="reply_count">1</span>
               </div>
               <div class="last_date">
                 <span>3일전</span>
@@ -357,9 +384,11 @@
     <button class="Enter" type="submit" name="button">로그인</button>
 
   </form>
-  <div class="forlogin">
+  <div class="forlogin hide">
 
   </div>
+
+  <!--|||||||||||||||||||||||||||||||||||    -M O B I L E-     |||||||||||||||||||||||||||||||||||||||||||||||||-->
   <!-- For mobile menu UNDER 768px -->
   <div class="M-menu">
     <img src="img/flower.jpg" alt="">
@@ -371,6 +400,10 @@
 
     </ul>
   </div>
+
+  <!--|||||||||||||||||||||||||||||||||||    -M O B I L E- E N D    |||||||||||||||||||||||||||||||||||||||||||||||||-->
+
+
   <!-- basic tap to all page -->
   <header id="header" class="row">
     <div class="container">
@@ -391,13 +424,13 @@
         <a href="#">로그인 하세요</a>
       </div>
       <div class="alarm">
-        <img src="" alt="알람">
+        <img src="img/alarm_icon.png" alt="알람">
       </div>
       <div class="store">
-        <img src="" alt="상점">
+        <img src="img/store.png" alt="상점">
       </div>
       <div class="setting">
-        <img src="" alt="설정">
+        <img src="img/b13200_config.png" alt="설정">
       </div>
 
     </div>
@@ -408,7 +441,7 @@
   <div class="container">
 
     <div id="main" class="worry">
-      <div class="box">
+      <div class="box1">
         <div class="content">
           <div class="shield">
             <form class="" action="index.html" method="post">
@@ -430,7 +463,7 @@
         </div>
       </div>
 
-      <div class="box">
+      <div class="box" onclick="get(this)">
         <div class="content">
           <div class="shield">
             <img class="emoji_img" src="img/flower.jpg" alt="">
@@ -440,7 +473,7 @@
           </div>
         </div>
       </div>
-      <div class="box">
+      <div class="box" onclick="get(this)">
         <div class="content">
           <div class="shield">
             <div class="text">
@@ -450,7 +483,7 @@
 
         </div>
       </div>
-      <div class="box">
+      <div class="box" onclick="get(this)">
         <div class="content">
           <div class="shield">
             <div class="text">
@@ -461,8 +494,8 @@
 
         </div>
       </div>
-      <div class="box">
-        <div class="content">
+      <div class="box" onclick="get(this)">
+        <div class="content ">
           <div class="shield">
             <div class="text">
               asdasdsad
@@ -471,7 +504,7 @@
 
         </div>
       </div>
-      <div class="box">
+      <div class="box" onclick="get(this)">
         <div class="content">
           <div class="shield">
             <div class="text">
@@ -481,7 +514,7 @@
 
         </div>
       </div>
-      <div class="box">
+      <div class="box" onclick="get(this)">
         <div class="content">
           <div class="shield">
             <div class="text">
@@ -491,7 +524,7 @@
 
         </div>
       </div>
-      <div class="box">
+      <div class="box" onclick="get(this)">
         <div class="content">
           <div class="shield">
             <div class="text">
@@ -501,7 +534,7 @@
 
         </div>
       </div>
-      <div class="box">
+      <div class="box" onclick="get(this)">
         <div class="content">
           <div class="shield">
             <div class="text">
@@ -511,7 +544,7 @@
 
         </div>
       </div>
-      <div class="box">
+      <div class="box" onclick="get(this)">
         <div class="content">
           <div class="shield">
             <div class="text">
@@ -521,7 +554,7 @@
 
         </div>
       </div>
-      <div class="box">
+      <div class="box" onclick="get(this)">
         <div class="content">
           <div class="shield">
             <div class="text">
@@ -531,7 +564,7 @@
 
         </div>
       </div>
-      <div class="box">
+      <div class="box" onclick="get(this)">
         <div class="content">
           <div class="shield">
             <div class="text">
@@ -541,7 +574,7 @@
 
         </div>
       </div>
-      <div class="box">
+      <div class="box" onclick="get(this)">
         <div class="content">
           <div class="shield">
             <div class="text">
@@ -551,7 +584,7 @@
 
         </div>
       </div>
-      <div class="box">
+      <div class="box" onclick="get(this)">
         <div class="content">
           <div class="shield">
             <div class="text">
@@ -561,7 +594,7 @@
 
         </div>
       </div>
-      <div class="box">
+      <div class="box" onclick="get(this)">
         <div class="content">
           <div class="shield">
             <div class="text">
@@ -571,7 +604,7 @@
 
         </div>
       </div>
-      <div class="box">
+      <div class="box" onclick="get(this)">
         <div class="content">
           <div class="shield">
             <div class="text">
@@ -581,7 +614,7 @@
 
         </div>
       </div>
-      <div class="box">
+      <div class="box" onclick="get(this)">
         <div class="content">
           <div class="shield">
             <div class="text">
@@ -592,7 +625,7 @@
 
         </div>
       </div>
-      <div class="box">
+      <div class="box" onclick="get(this)">
         <div class="content">
           <div class="shield">
             <div class="text">
@@ -602,7 +635,7 @@
 
         </div>
       </div>
-      <div class="box">
+      <div class="box" onclick="get(this)">
         <div class="content">
           <div class="shield">
             <div class="text">
@@ -612,7 +645,7 @@
 
         </div>
       </div>
-      <div class="box">
+      <div class="box" onclick="get(this)">
         <div class="content">
           <div class="shield">
             <div class="text">
@@ -857,6 +890,27 @@
     </div>
 
   </div>
+  <script type="text/javascript">
+  function get(content){
+    //alert(document.getElementsByClassName('text')[1].innerHTML);
+
+    document.getElementById('content_text').innerHTML = content.getElementsByClassName('text')[0].innerHTML;
+
+  }
+  function todak(obj){
+    let initvalue = parseInt(obj.getElementsByClassName('content_thanks_count')[0].innerHTML);
+    //console.log(initvalue);
+    obj.getElementsByClassName('content_thanks_count')[0].innerHTML = ++initvalue;
+  }
+  function thx_increase(obj){
+    let initvalue = parseInt(obj.getElementsByClassName('reply_count')[0].innerHTML);
+    //console.log(initvalue);
+    obj.getElementsByClassName('reply_count')[0].innerHTML = ++initvalue;
+
+  }
+
+
+  </script>
 
   <script src="js/login.js" charset="utf-8"></script>
   <script src="js/Mate.js" charset="utf-8"></script>
@@ -885,9 +939,9 @@
       // 여기서 한번불렀을떄 메인의 크기가 정해지는 데
 
       $(window).on('scroll', function() {
-        console.log("hello");
+        //console.log("hello");
         if (checkScrollSlide()) {
-          console.log("zziziziz");
+          //console.log("zziziziz");
 
 
             //var tt = " ＠*&#^$(*%&*(#$^*@^$＠*&#^$(*%&*(#$^*@^$＠*&#^$(*%&*(#$^*@^$＠*&#^$(*%&*(#$^*@^$＠*&#^$(*%&*(#$^*@^$＠*&#^$(*%&*(#$^*@^$#알람 #행동 #가방<br>안녕하세요 저는 서울사는 친구입니다.<br>안녕하세여<br> 안녕하세요 저는 서울사는 친구입니다.<br>안녕하세요 저는 서울사는 친구입니다.<br>안녕하세요 저는 서울사는 친구입니다.<br>안녕하세요 저는 서울사는 친구입니다.<br>안녕하세요 저는 서울사는 친구입니다.<br>xptmxm<br>";
@@ -895,13 +949,17 @@
 
             //for(var i=0;i<24;i++){
               //console.log(tt[i]);
+
               var oBox = $('<div>').addClass('box').appendTo($('#main'));
+              $('.box').attr('onClick', 'get(this);');
+
               var oPic = $('<div>').addClass('content').appendTo(oBox);
               var oshield = $('<div>').addClass('shield').appendTo(oPic);
               $('<img src="img/flower.jpg" alt="이미지">').addClass('emoji_img').appendTo(oshield);
-              $('<div>').addClass('text').append(tt[0]).appendTo(oshield);
+              $('<div>').addClass('text').append(tt[parseInt(Math.random()*10)]).appendTo(oshield);
               //$('<div>').addClass('reply').append("댓글").appendTo(oshield);
                 waterFall();
+                replyre();
             //}
 
 
