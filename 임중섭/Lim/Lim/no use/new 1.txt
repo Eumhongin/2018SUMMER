@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+    .shield{
+      width: 50px;
+      background-color: red;
+
+    }
+    .text{
+      overflow-wrap:break-word;
+
+    }
+  </style>
+</head>
+
+<body>
+  <p id="tt"></p>
+  <div class="shield">
+    <div class="text">
+      워터폴!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+빠이어볼!!!!!!!!<빠직><빠직><빠직><빠직><빠직>
+#폭포를연구한다 #무한스크롤의무한속으로
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+  var text = document.getElementsByClassName("text");
+  alert(text[0].innerHTML);
+  var change = text[0].innerHTML.replace(/\0|\n/g,"");
+  alert(change);
+  text[0].innerHTML = change;
+  </script>
+</body>
+
+</html>

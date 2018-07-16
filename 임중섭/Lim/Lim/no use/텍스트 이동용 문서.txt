@@ -1,0 +1,17 @@
+      <div class="box">
+        <div class="content">
+          <div class="shield">
+            <form class="" action="index.html" method="post">
+              <div class="plus">
+                +
+              </div>
+              <div class="text">
+                <textarea name="name" rows="8" cols="80" style="width:100%;"></textarea>
+
+              </div>
+              <button type="submit" name="button">새글 쓰기</button>
+            </div>
+            </form> 
+
+        </div>
+      </div>

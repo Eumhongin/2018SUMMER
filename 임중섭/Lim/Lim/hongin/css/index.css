@@ -1,0 +1,277 @@
+
+html,body{
+  padding:0;
+  margin:0;
+  width: 100%;
+  font-family: 'sd';
+
+}
+#main{
+  margin-top: 8%;
+  /* border : 1px solid black; */
+}
+header{
+  height: 6%;
+  position: fixed;
+  z-index: 90;
+  top:0;
+  width: 100%;
+  background-color: white;
+  border-bottom:0.5px solid black;
+  padding:0;
+  padding-top:1%;
+  font-size: 32px;
+
+}
+.text1,.text{
+  word-break: break-all;
+  font-size:2em;
+
+}
+.Logo,.SearchBar,.joke,.concern,.alarm,.login,.store,.setting{
+  float: left;
+  color:#626262;
+
+}
+.container > *:hover{
+  color:black;
+}
+.container{
+  margin-left: 5%;
+  margin-right: 5%;
+  padding:0;
+}
+.Logo{
+  color:black;
+  font-size: 32px;
+}
+.shield{
+  max-width: 65%;
+  margin:0 auto;
+}
+.emoji_img{
+  width: 44%;
+}
+
+.box,.box1{
+  text-align: center;
+  border-radius: 8px;
+}
+
+
+.SearchBar{
+
+  margin-left: 40px;
+  width: 58%;
+}
+.SearchBar input{
+  width: 100%;
+  border-radius: 5px;
+  border:none;
+  border:1px solid #626262;
+  background-color: #EFEFEF;
+  height:30px;
+  font-family: 'sd';
+  font-size: 0.8em;
+
+}
+.joke {
+  margin-left: 1%;
+}
+
+.concern {
+  margin-left: 3%;
+  color:black;
+}
+
+.login {
+
+  margin-left: 1.6%;
+}
+a{
+  text-decoration: none;
+
+}
+.login a{
+  color:#626262;
+  text-decoration: none;
+}
+.login a:hover{
+  color: black;
+}
+
+.alarm {
+
+  width: 2%;
+  margin-left: 1%;
+}
+.alarm img{
+  width: 100%;
+}
+
+.store {
+  width: 2%;
+
+  margin-left: 1%;
+}
+.store img{
+  width: 100%;
+}
+
+.setting {
+  width: 2%;
+  margin-left: 1%;
+}
+.setting img{
+  width: 100%;
+}
+.info{
+  margin:0 auto;
+  text-align: center;
+  margin-top:8%;
+
+}
+.mypic{
+  margin:0 auto;
+  width: 220px;
+  height: 220px;
+  padding:0;
+
+  border-radius: 50%;
+
+}
+.name{
+  margin-top:1%;
+  font-size: 41px;
+}
+.menulist{
+  margin-top: 5%;
+}
+.menulist button{
+  margin:1%;
+  border:none;
+  background-color: rgba(0,0,0,0);
+  font-family: 'sd';
+  font-size:32px;
+  opacity: 0.2;
+}
+
+#mycontent_text{
+  opacity: 1;
+}
+.hr{
+  width: 2%;
+  margin:0 auto;
+}
+.hide{
+  display: none;
+}
+.forlogin{
+  z-index:130;
+  position: fixed;
+  background:rgba(0,0,0,0.67);
+  width: 100%;
+  height: 1080px;
+  top:0;
+  left:0;
+  opacity: 0;
+}
+.loginpop{
+  position: fixed;
+  z-index: 9999;
+  background-color: #3F3F3F;
+  box-shadow: 0 0 2px black;
+  border-radius: 16px;
+  width: 20%;
+  text-align: center;
+  left: 40%;
+  margin-top:5%;
+  height: 50%;
+  opacity: 0;
+  padding-bottom:40px;
+
+}
+
+.img_login{
+  margin-top:10%;
+  width: 30%;
+  margin-bottom: 30%;
+
+}
+.comment_login{
+  font-size: 2em;
+  color:white;
+  margin-top:30px;
+}
+.ID,.pass{
+  width: 66%;
+  margin-top:5%;
+  border:none;
+  border-bottom:2px solid #ccc;
+  background: none;
+  font-family: 'sd';
+  font-size: 1.4em;
+  color: white;
+}
+.Enter{
+  border:none;
+  background: none;
+  font-family: 'sd';
+  color:white;
+  margin-top:4%;
+
+  font-size:2em;
+  width: 66%;
+  height: 8%;
+
+}
+.M-menu{
+  visibility: hidden;
+  position: fixed;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  background-color: red;
+
+}
+.M-menu img{
+  right: 0;
+  width: 5%;
+}
+
+.M-menu ul{
+  width: 5%;
+  margin-top:1px;
+}
+.M-menu li{
+  margin-top:3px;
+}
+@media screen and (max-width:1600px){
+  .SearchBar{
+    width: 50%;
+  }
+
+}
+@media screen and (max-width:1024px){
+  .SearchBar{
+    width: 35%;
+  }
+}
+@media screen and (max-width:768px){
+  .SearchBar{
+    width: 55%;
+  }
+  .joke,.concern,.store,.setting,.login,.alarm{
+    display: none;
+  }
+  header{
+    height: 48px;
+  }
+  .info{
+    margin-top:14%;
+  }
+  .M-menu{
+    visibility: hidden;
+
+  }
+}
