@@ -53,41 +53,62 @@
 </head>
 
 <body>
-  <header id="header" class="row">
-    <div class="container_relative">
-      <div class="Logo" onclick="location.href='index.html'">
+  <div class="forlogin hide">
+    <form class="loginpop" action="index.html" method="post">
+      <img class="img_login" src="img/flower.jpg" alt="로고사진">
+      <br>
+      <span class="comment_login">Introducing comment<br></span>
+      <br>
+      <input class="ID" type="email" placeholder="이메일" required>
+      <br>
+      <input class="pass" type="text" placeholder="비밀번호" required>
+      <br>
+      <button class="Enter" type="submit" name="button">로그인</button>
+
+    </form>
+  </div>
+  <div class="M-menu">
+    <img src="img/flower.jpg" alt="">
+    <ul>
+      <li>잡담</li>
+      <li>고민</li>
+      <li>상점</li>
+      <li>설정</li>
+
+    </ul>
+  </div>
+  <header class="row">
+    <div class="container">
+      <a href="index.html" class="Logo">
         나쁜기억지우개
-      </div>
+      </a>
       <form class="SearchBar" action="index.html" method="post">
         <input type="text" name="" value="" placeholder="해시태그검색">
-        <div id="result">
-
-
-        </div>
       </form>
-      <div class="concern" onclick="click_worry();">
-        고민
-      </div>
-      <div class="joke" onclick="click_story();">
-        잡담
-      </div>
 
+      <a href="#" class="joke">
+        잡답
+      </a>
+      <a href="#" class="concern">
+        고민
+      </a>
       <div class="login">
         <a href="#">로그인 하세요</a>
       </div>
-      <div class="alarm">
-        <img src="img/alarm_icon.png" alt="알람">
-      </div>
-      <div class="store">
-        <img src="img/store.png" alt="상점">
-      </div>
-      <div class="setting" onclick="location.href='myroom.html'">
-        <img src="img/b13200_config.png" alt="설정">
-      </div>
+      <a href="#" class="alarm">
+        <img src="" alt="알람">
+      </a>
+      <a href="#" class="store">
+        <img src="" alt="상점">
+      </a>
+      <a href="#" class="setting">
+        <img src="" alt="설정">
+      </a>
 
     </div>
 
   </header>
+
   <!-- container -->
   <div class="container">
     <div class="info">
@@ -743,7 +764,11 @@
 
 
     <div class="aside">
-      <img src="img/matepane.png" alt="">
+      M<br>
+      A<br>
+      T<br>
+      E<br>
+
     </div>
 
   </div>
@@ -874,64 +899,8 @@
 
 
   </script>
-  <script type="text/javascript">
-  var mycontent = document.getElementsByClassName("mycontent");
-  var myreply = document.getElementsByClassName("myreply");
-  var sendgift = document.getElementsByClassName("sendgift");
-  var mycontent_text = document.getElementById("mycontent_text");
-  var myreply_text = document.getElementById("myreply_text");
-  var sendgift_text = document.getElementById("sendgift_text");
+  <script src="js/myroom.js" charset="utf-8"></script>
 
-  function click_mycontent(){
-    mycontent_text.style.opacity = "1.0";
-    myreply_text.style.opacity = "0.2";
-    sendgift_text.style.opacity = "0.2";
-    mycontent[0].classList.remove("hide");
-    myreply[0].classList.add("hide");
-    sendgift[0].classList.add("hide");
-    mycontent[0].id = 'main';
-
-    waterFall();
-
-    myreply[0].id = 'main1';
-    sendgift[0].id = 'main1';
-
-
-  }
-
-function click_myreply(){
-  mycontent_text.style.opacity = "0.2";
-  myreply_text.style.opacity = "1";
-  sendgift_text.style.opacity = "0.2";
-  mycontent[0].classList.add("hide");
-  myreply[0].classList.remove("hide");
-  sendgift[0].classList.add("hide");
-  mycontent[0].id = 'main';
-  myreply[0].id = 'main';
-  //flag = true;
-  console.log('i am going!');
-  waterFall();
-  mycontent[0].id = 'main1';
-  sendgift[0].id = 'main1';
-
-}
-function click_sendgift(){
-  mycontent_text.style.opacity = "0.2";
-  myreply_text.style.opacity = "0.2";
-  sendgift_text.style.opacity = "1.0";
-  mycontent[0].classList.add("hide");
-  myreply[0].classList.add("hide");
-  sendgift[0].classList.remove("hide");
-  mycontent[0].id = 'main';
-  sendgift[0].id = 'main';
-  waterFall();
-  mycontent[0].id = 'main1';
-  myreply[0].id = 'main1';
-
-}
-
-
-  </script>
 
 
 </body>

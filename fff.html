@@ -2,55 +2,287 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+
     <title></title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style media="screen">
+      .k1{
+        width: 500px;
+        background-color: red;
+        height: 500px;
+        word-wrap: break-word;
+        word-break: break-all;
+        white-space: normal;
+        -webkit-word-wrap: break-word;
+        -webkit-word-break: break-all;
+        -webkit-white-space: normal;
+        margin:0;
+        padding:0;
+        text-overflow: ellipsis;
+
+      }
+    </style>
   </head>
+
   <body>
-    <div id="main">
+    <div class="k1">
+
+      &#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;&#8252;
+
+
+
 
     </div>
-    <script type="text/javascript">
-    var arr = new Array(10);
-    for(var i=0;i<10;i++)
-    {
-      var oBox = $('<div>').addClass('box').appendTo($('#main'));
-      var oPic = $('<div>').addClass('content').appendTo(oBox);
-      document.getElementsByClassName('content')[0].innerHTML = i;
-      var arrmember = document.getElementsByClassName('content')[0].innerHTML;
-      arr[i] = arrmember;
-      $('.content').remove();
-      $('.box').remove();
-
-    }
-      $('#main').remove();
-    document.write(arr);
-
-    </script>
-
   </body>
 </html> -->
+
+
+<!-- 상점 예시 html -->
 <!DOCTYPE html>
-<html>
-<body>
+<!-- <html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width = device-width,initial-scale = 1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="hongin/css/core.css">
+    <style media="screen">
+      section{
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+        margin:0 auto;
 
-<h2>JavaScript Functions</h2>
+      }
+      .content{
+        border:1px solid black;
+        padding:3%;
+        border-radius: 16px;
+        text-align: center;
+      }
+      .textside{
+        text-align: left;
+      }
+      .content hr{
+        width: 30%;
+        margin-left: 0;
+      }
+      .content img{
+        border:solid black 1px;
+        border-radius: 15px;
+        width: 80%;
+        margin:5%;
+      }
 
-<p>This example calls a function which performs a calculation, and returns the result:</p>
+    </style>
+  </head>
+  <body>
+    <div class="slide">
 
-<p id="demo"></p>
 
-<div class="wdwd" onclick="oo(this)">
-  asdasd
-</div>
-<script>
-function myFunction(p1, p2) {
-    return p1 * p2;
-}
-document.getElementById("demo").innerHTML = myFunction(4, 3);
-function oo(sdsd){
-  alert(sdsd.innerHTML);
-}
-</script>
+    </div>
+    <section class="row">
+      <div class="box1">
+        <div class="content">
+          <img src="hongin/img/alarm_icon.png" alt="">
+          <div class="textside">
+            <p class="itemname">item name</p>
+            <hr>
+            <p class="description">Description</p>
 
-</body>
+          </div>
+        </div>
+      </div>
+      <div class="box2">
+        <div class="content">
+          <img src="hongin/img/alarm_icon.png" alt="">
+          <div class="textside">
+            <p class="itemname">item name</p>
+            <hr>
+            <p class="description">Description</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="box3">
+        <div class="content">
+          <img src="hongin/img/alarm_icon.png" alt="">
+          <div class="textside">
+            <p class="itemname">item name</p>
+            <hr>
+            <p class="description">Description</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="box4">
+        <div class="content">
+          <img src="hongin/img/alarm_icon.png" alt="">
+          <div class="textside">
+            <p class="itemname">item name</p>
+            <hr>
+            <p class="description">Description</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="box5">
+        <div class="content">
+          <img src="hongin/img/alarm_icon.png" alt="">
+          <div class="textside">
+            <p class="itemname">item name</p>
+            <hr>
+            <p class="description">Description</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="box6">
+        <div class="content">
+          <img src="hongin/img/alarm_icon.png" alt="">
+          <div class="textside">
+            <p class="itemname">item name</p>
+            <hr>
+            <p class="description">Description</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="box7">
+        <div class="content">
+          <img src="hongin/img/alarm_icon.png" alt="">
+          <div class="textside">
+            <p class="itemname">item name</p>
+            <hr>
+            <p class="description">Description</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="box8">
+        <div class="content">
+          <img src="hongin/img/alarm_icon.png" alt="">
+          <div class="textside">
+            <p class="itemname">item name</p>
+            <hr>
+            <p class="description">Description</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="box9">
+        <div class="content">
+          <img src="hongin/img/alarm_icon.png" alt="">
+          <div class="textside">
+            <p class="itemname">item name</p>
+            <hr>
+            <p class="description">Description</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="box10">
+        <div class="content">
+          <img src="hongin/img/alarm_icon.png" alt="">
+          <div class="textside">
+            <p class="itemname">item name</p>
+            <hr>
+            <p class="description">Description</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="box11">
+        <div class="content">
+          <img src="hongin/img/alarm_icon.png" alt="">
+          <div class="textside">
+            <p class="itemname">item name</p>
+            <hr>
+            <p class="description">Description</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="box12" onclick="hhh(this)">
+        <div class="content">
+          <img src="hongin/img/alarm_icon.png" alt="">
+          <div class="textside">
+            <p class="itemname">item name</p>
+            <hr>
+            <p class="description">Description</p>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <script type="text/javascript">
+
+    for(var i=0;i<12;i++)
+    {
+      //console.log('box'+(parseInt(i)+parseInt(1)));
+
+      document.getElementsByClassName('box'+(parseInt(i)+parseInt(1)))[0].classList.add("col-4");
+      document.getElementsByClassName('box'+(parseInt(i)+parseInt(1)))[0].classList.add("col-m-3");
+      document.getElementsByClassName('box'+(parseInt(i)+parseInt(1)))[0].classList.add("col-s-1");
+      document.getElementsByClassName('box'+(parseInt(i)+parseInt(1)))[0].style.padding ="3%";
+
+      function hhh(e){
+          alert($(e).text());
+      }
+
+    }
+
+    </script>
+  </body>
+</html> -->
+
+
+
+<!-- 알림 팝업 예시 -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .img{
+        width: 100px;
+        background-color: orange;
+      }
+    </style>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.img').on('click',function(){
+          $('.toggle_alarm').slideToggle("slow");
+      });
+
+
+    });
+
+    </script>
+  </head>
+  <body>
+    <div class="img">
+      이미지가 들어갈 자리임
+    </div>
+    <div class="toggle_alarm">
+      알람들들어가는자리
+    </div>
+    <div class="lk" onclick="gg(this)">
+      <div class="kk">
+        ajdnwaljdna
+      </div>
+
+    </div>
+    <iframe src="hongin/index.html" width="100%" height="1000px" style="border:none;"></iframe>
+    <script type="text/javascript">
+    function gg(e){
+      var hh = e.className;
+      //alert(e.className);
+      alert($('.'+hh+' > div').text());
+    }
+
+    </script>
+  </body>
 </html>

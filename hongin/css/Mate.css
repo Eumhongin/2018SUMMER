@@ -2,11 +2,12 @@
   background-color: #F3F3F3;
   position: fixed;
 
-  right:0;
+  right:50px;
   width: 14%;
   border:solid 1px #626262;
   border-radius: 16px 0px 0px 16px;
   border-top:none;
+
 
 }
 
@@ -14,10 +15,12 @@
   width: 40px;
   top:20%;
   height: 10%;
-  background-color: red;
+  background-color: white;
   position: absolute;
-  left: -40px;
+  left: -47px;
   text-align: center;
+
+
 }
 .SearchBar_Mate{
   margin-top: 10%;
@@ -29,6 +32,12 @@
   font-family: 'sd';
   font-size: 1.2em;
   padding-left: 5px;
+  margin-bottom:1%;
+}
+.matelist{
+
+  height: 90%;
+  overflow-y: scroll;
 }
 .Mate_identification{
 

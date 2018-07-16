@@ -9,7 +9,7 @@ function click_worry(){
 
   worry[0].classList.remove("hide");
   story[0].classList.add("hide");
-
+  document.getElementsByClassName('Store_Section')[0].classList.add('hide');
   worry[0].id = 'main';
 
   waterFall();
@@ -25,11 +25,13 @@ function click_story(){
 
   worry[0].classList.add("hide");
   story[0].classList.remove("hide");
-
+  document.getElementsByClassName('Store_Section')[0].classList.add('hide');
+  
   story[0].id = 'main';
 
   waterFall();
 
   worry[0].id = 'main1';
+
 
 }

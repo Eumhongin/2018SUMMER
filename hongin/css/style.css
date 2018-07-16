@@ -4,11 +4,16 @@
   padding: 0;
 }
 
-#main { position: relative; }
+#main {
+  position: relative;
+}
 
 .box,.box1 {
   padding: 15px 0 0 15px;
   float: left;
+}
+.content:hover{
+  box-shadow: 0 0 5px #4fcbff;
 }
 
 .content {
