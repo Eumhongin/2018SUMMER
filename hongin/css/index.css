@@ -1,4 +1,9 @@
-
+@import "alert.css";
+@import "style.css";
+@import "core.css";
+@import "Mate.css";
+@import "reply.css";
+@import "store.css";
 html,body{
   padding:0;
   margin:0;
@@ -47,7 +52,7 @@ header{
 }
 .container_relative{
   margin-left: 5%;
-  
+
   padding:0;
 }
 .Logo{
@@ -114,7 +119,7 @@ a{
   width: 2%;
   margin-left: 1%;
 }
-.alarm img{
+.alarm > img{
   width: 100%;
 }
 
