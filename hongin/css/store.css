@@ -1,5 +1,5 @@
 section{
-  padding-top:40%;
+  padding-top:5%;
   margin-left: 15%;
   margin-right: 15%;
   width: 70%;
@@ -24,4 +24,12 @@ section{
   border-radius: 15px;
   width: 80%;
   margin:5%;
+}
+.slideshow{
+
+  margin:0 auto;
+  margin-top : 8%;
+  width: 70%;
+  height: 100%;
+
 }

@@ -4,6 +4,7 @@
 @import "Mate.css";
 @import "reply.css";
 @import "store.css";
+@import "slide.css";
 html,body{
   padding:0;
   margin:0;
@@ -301,4 +302,9 @@ a{
 #result p{
   border-bottom:1px solid black;
 
+}
+.plus{
+  margin:0 auto;
+  width: 40%;
+  border:1px dashed black;
 }

@@ -12,70 +12,77 @@
   <!-- <script src="js/script.js"></script> -->
 
   <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/style.css">
+
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/core.css">
-  <link rel="stylesheet" href="css/Mate.css">
-  <link rel="stylesheet" href="css/reply.css">
+
+  <!-- <link rel="stylesheet" href="css/alert.css"> -->
   <script>
 
-  var aside = document.getElementsByClassName("aside");
-  var asidegroup = document.getElementsByClassName("asidegroup");
-  $(document).ready(function(){
-    $('.box').on('click',function(){
-      document.getElementsByClassName("forlogin")[0].classList.remove("hide");
-      document.getElementsByClassName("click_list")[0].classList.remove("hide");
-      $('.forlogin').animate({opacity:'1'},300);
-      $('.click_list').animate({opacity:'1'},300);
+    var aside = document.getElementsByClassName("aside");
+    var asidegroup = document.getElementsByClassName("asidegroup");
+    $(document).ready(function(){
+      $('.box').on('click',function(){
+        document.getElementsByClassName("forlogin")[0].classList.remove("hide");
+        document.getElementsByClassName("click_list")[0].classList.remove("hide");
+        $('.forlogin').animate({opacity:'1'},300);
+        $('.click_list').animate({opacity:'1'},300);
+      });
+      $(document).keyup(function(e) {
+        //if (e.keyCode === 13) $('.save').click();     // enter
+        if (e.keyCode === 27&&!(document.getElementsByClassName("click_list")[0].classList.contains("hide")))
+        {
+            document.getElementsByClassName("forlogin")[0].classList.add("hide");
+            document.getElementsByClassName("click_list")[0].classList.add("hide");
+            $('.forlogin').css("opacity","0");
+            $('.click_list').css("opacity","0");
+        }
+
+      });
+      $('.forlogin').on('click',function(){
+        document.getElementsByClassName("forlogin")[0].classList.add("hide");
+        document.getElementsByClassName("click_list")[0].classList.add("hide");
+        $('.forlogin').css("opacity","0");
+        $('.click_list').css("opacity","0");
+
+
+      });
+
+
+
+
+      $('.asidegroup').css({"height":$(window).outerHeight()-$('header').outerHeight(),'top':$('header').outerHeight(),'right':-$('.asidegroup').outerWidth()});
+
+      $('.aside').on('click',function(){
+        if(asidegroup[0].classList.contains("close"))
+        {
+          //alert($('.asidegroup').outerWidth());
+          $('.asidegroup').animate({right:'0'},300);
+          asidegroup[0].classList.remove("close");
+          asidegroup[0].classList.add("open");
+
+        }
+        else {
+          $('.asidegroup').animate({right:-$('.asidegroup').outerWidth()},300);
+          asidegroup[0].classList.add("close");
+          asidegroup[0].classList.remove("open");
+        }
+
+      });
+      $('.store').on('click',function(){
+        if(!(document.getElementsByClassName('worry')[0].classList.contains("hide")))
+        {
+          document.getElementsByClassName('worry')[0].classList.add("hide");
+        }
+        if(!(document.getElementsByClassName('story')[0].classList.contains("hide")))
+        {
+          document.getElementsByClassName('story')[0].classList.add("hide");
+        }
+        document.getElementsByClassName('Store_Section')[0].classList.remove('hide');
+      });
     });
-    $(document).keyup(function(e) {
-      //if (e.keyCode === 13) $('.save').click();     // enter
-      if (e.keyCode === 27&&!(document.getElementsByClassName("click_list")[0].classList.contains("hide")))
-      {
-          document.getElementsByClassName("forlogin")[0].classList.add("hide");
-          document.getElementsByClassName("click_list")[0].classList.add("hide");
-          $('.forlogin').css("opacity","0");
-          $('.click_list').css("opacity","0");
-      }
-
-    });
-    $('.forlogin').on('click',function(){
-      document.getElementsByClassName("forlogin")[0].classList.add("hide");
-      document.getElementsByClassName("click_list")[0].classList.add("hide");
-      $('.forlogin').css("opacity","0");
-      $('.click_list').css("opacity","0");
-
-
-    });
-
-
-
-
-    $('.asidegroup').css({"height":$(window).outerHeight()-$('header').outerHeight(),'top':$('header').outerHeight(),'right':-$('.asidegroup').outerWidth()});
-
-    $('.aside').on('click',function(){
-      if(asidegroup[0].classList.contains("close"))
-      {
-        //alert($('.asidegroup').outerWidth());
-        $('.asidegroup').animate({right:'0'},300);
-        asidegroup[0].classList.remove("close");
-        asidegroup[0].classList.add("open");
-
-      }
-      else {
-        $('.asidegroup').animate({right:-$('.asidegroup').outerWidth()},300);
-        asidegroup[0].classList.add("close");
-        asidegroup[0].classList.remove("open");
-      }
-
-    });
-  });
 
 
   </script>
-
-
-
 </head>
 
 <body>
@@ -101,6 +108,38 @@
             즐기면서..<br>
             <br>오늘도 하루가 지나가네요..<br>
             -Oreuka<br>
+            바보같아..<br>
+            나도 힘든걸..<br>
+            <br>
+            너도 힘드니..?<br>
+            눈을감고 새카만 밤을<br>
+            즐기면서..<br>
+            <br>오늘도 하루가 지나가네요..<br>
+            -Oreuka<br>
+            바보같아..<br>
+            나도 힘든걸..<br>
+            <br>
+            너도 힘드니..?<br>
+            눈을감고 새카만 밤을<br>
+            즐기면서..<br>
+            <br>오늘도 하루가 지나가네요..<br>
+            -Oreuka<br>
+            바보같아..<br>
+            나도 힘든걸..<br>
+            <br>
+            너도 힘드니..?<br>
+            눈을감고 새카만 밤을<br>
+            즐기면서..<br>
+            <br>오늘도 하루가 지나가네요..<br>
+            -Oreuka<br>
+            바보같아..<br>
+            나도 힘든걸..<br>
+            <br>
+            너도 힘드니..?<br>
+            눈을감고 새카만 밤을<br>
+            즐기면서..<br>
+            <br>오늘도 하루가 지나가네요..<br>
+            -Oreuka<br>
 
           </div>
           <div class="content_thanks row" onclick="todak(this)">
@@ -112,9 +151,8 @@
       </div>
       <!-- The Reply side is Right -->
       <div class="content_right col-2">
+
         <div class="reply_shield">
-
-
           <!-- the block of reply -->
           <div class="reply_box">
             <div class="reply_wrapper row">
@@ -123,11 +161,13 @@
               </div>
               <div class="report">
                 <img src="img/siren.png" alt="신고">
+                <a href="#reply_input">댓글달기</a>
               </div>
             </div>
             <div class="bottom_side row" onclick="thx_increase(this)">
               <div class="reply_thanks">
                 <img src="img/thx_icon.png" alt="고마워요">
+
               </div>
               <div class="reply_thx_count">
                 <span class="reply_count">1</span>
@@ -138,182 +178,163 @@
             </div>
           </div>
           <!-- box end -->
+          <div class="ID1">
+            <div class="reply_box">
+              <div class="reply_wrapper row">
+                <div class="reply_left">
+                  <span>생일 축하드려요^^</span>
+                </div>
+                <div class="report">
+                  <img src="img/siren.png" alt="신고">
+                  <a href="#reply_input">댓글달기</a>
+                </div>
+              </div>
+              <div class="bottom_side row" onclick="thx_increase(this)">
+                <div class="reply_thanks">
+                  <img src="img/thx_icon.png" alt="고마워요">
+                </div>
+                <div class="reply_thx_count">
+                  <span class="reply_count">1</span>
+                </div>
+                <div class="last_date">
+                  <span>3일전</span>
+                </div>
+              </div>
+            </div>
+            <!-- the block of reply_reply -->
 
-          <div class="reply_box">
-            <div class="reply_wrapper row">
-              <div class="reply_left">
-                <span>생일 축하드려요^^</span>
+            <div class="reply_reply_box">
+              <!-- 대댓글 유져에의한ㄴㄴ-->
+              <div class="Write_By_User">
+
               </div>
-              <div class="report">
-                <img src="img/siren.png" alt="신고">
+              <div class="Write_By_Writer">
+
               </div>
+              <!-- 대댓글 글쓴이에의한 댓글 글쓴이 아님.-->
+              <div class="Write_By_Writer">
+                <div class="identified_writer">
+                  <span>글쓴이</span>
+                </div>
+                <div class="reply_reply_wrapper reply_box row">
+                  <div class="reply_wrapper row">
+                    <div class="reply_left">
+                      <span>고마워요</span>
+                    </div>
+                    <div class="report">
+                      <img src="img/siren.png" alt="신고">
+                      <a href="#reply_input">댓글달기</a>
+                    </div>
+                  </div>
+                  <div class="bottom_side row" onclick="thx_increase(this)">
+                    <div class="reply_thanks">
+                      <img src="img/thx_icon.png" alt="고마워요">
+                    </div>
+                    <div class="reply_thx_count">
+                      <span class="reply_count">1</span>
+                    </div>
+                    <div class="last_date">
+                      <span>3일전</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Write_By_User">
+                <!-- the block of reply -->
+                <div class="reply_reply_wrapper reply_box row">
+                  <div class="reply_wrapper row">
+                    <div class="reply_left">
+                      <span>저도 5학년 썜 케잌 사다드린게 생각나욬 ㅋㅋ</span>
+                    </div>
+                    <div class="report">
+                      <img src="img/siren.png" alt="신고">
+                      <a href="#reply_input">댓글달기</a>
+                    </div>
+                  </div>
+                  <div class="bottom_side row" onclick="thx_increase(this)">
+                    <div class="reply_thanks">
+                      <img src="img/thx_icon.png" alt="고마워요">
+                    </div>
+                    <div class="reply_thx_count">
+                      <span class="reply_count">1</span>
+                    </div>
+                    <div class="last_date">
+                      <span>3일전</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- box end -->
+              </div>
+
+
+              <div class="Write_By_Writer">
+                <div class="identified_writer">
+                  <span>글쓴이</span>
+                </div>
+                <!-- the block of reply -->
+                <div class="reply_reply_wrapper reply_box row">
+                  <div class="reply_wrapper row">
+                    <div class="reply_left">
+                      <span>ㅋㅋㅋㅋㅌㅋㅋㅋ 크으~ 선생님 챙겨주는 마음 멋있어요 !!</span>
+                    </div>
+                    <div class="report">
+                      <img src="img/siren.png" alt="신고">
+                      <a href="#reply_input">댓글달기</a>
+                    </div>
+                  </div>
+                  <div class="bottom_side row" onclick="thx_increase(this)">
+                    <div class="reply_thanks">
+                      <img src="img/thx_icon.png" alt="고마워요">
+                    </div>
+                    <div class="reply_thx_count">
+                      <span class="reply_count">1</span>
+                    </div>
+                    <div class="last_date">
+                      <span>3일전</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- box end -->
+              </div>
+
+
+              <div class="Write_By_User">
+                <!-- the block of reply -->
+                <div class="reply_reply_wrapper reply_box row">
+                  <div class="reply_wrapper row">
+                    <div class="reply_left">
+                      <span>제가 케잌사서 반애들 복도 끝으로 모아서 <br> 서프라이즈 해드렸죠..<br>ㅎ(뿌듯뿌듯)</span>
+                      <!-- 댓글 내용 -->
+                    </div>
+                    <div class="report">
+                      <img src="img/siren.png" alt="신고">
+                      <a href="#reply_input">댓글달기</a>
+                    </div>
+                  </div>
+                  <div class="bottom_side row" onclick="thx_increase(this)">
+                    <div class="reply_thanks">
+                      <img src="img/thx_icon.png" alt="고마워요">
+                    </div>
+                    <div class="reply_thx_count">
+                      <span class="reply_count">1</span>
+                      <!-- 고마워요 몇개 받았는지 -->
+                    </div>
+                    <div class="last_date">
+                      <span>3일전</span>
+                      <!-- 글 언제썼는지 -->
+                    </div>
+                  </div>
+                </div>
+                <!-- box end -->
+              </div>
+
+
+
             </div>
-            <div class="bottom_side row" onclick="thx_increase(this)">
-              <div class="reply_thanks">
-                <img src="img/thx_icon.png" alt="고마워요">
-              </div>
-              <div class="reply_thx_count">
-                <span class="reply_count">1</span>
-              </div>
-              <div class="last_date">
-                <span>3일전</span>
-              </div>
-            </div>
+            <!-- the block of reply -->
           </div>
-          <!-- the block of reply_reply -->
-
-          <div class="reply_reply_box">
-            <!-- 대댓글 유져에의한ㄴㄴ-->
-            <div class="Write_By_User">
-
-            </div>
-            <div class="Write_By_Writer">
-
-            </div>
-            <!-- 대댓글 글쓴이에의한 댓글 글쓴이 아님.-->
-            <div class="Write_By_Writer">
-              <div class="identified_writer">
-                <span>글쓴이</span>
-              </div>
-              <div class="reply_reply_wrapper reply_box row">
-                <div class="reply_wrapper row">
-                  <div class="reply_left">
-                    <span>고마워요</span>
-                  </div>
-                  <div class="report">
-                    <img src="img/siren.png" alt="신고">
-                  </div>
-                </div>
-                <div class="bottom_side row" onclick="thx_increase(this)">
-                  <div class="reply_thanks">
-                    <img src="img/thx_icon.png" alt="고마워요">
-                  </div>
-                  <div class="reply_thx_count">
-                    <span class="reply_count">1</span>
-                  </div>
-                  <div class="last_date">
-                    <span>3일전</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-            <div class="Write_By_User">
-              <!-- the block of reply -->
-              <div class="reply_reply_wrapper reply_box row">
-                <div class="reply_wrapper row">
-                  <div class="reply_left">
-                    <span>저도 5학년 썜 케잌 사다드린게 생각나욬 ㅋㅋ</span>
-                  </div>
-                  <div class="report">
-                    <img src="img/siren.png" alt="신고">
-                  </div>
-                </div>
-                <div class="bottom_side row" onclick="thx_increase(this)">
-                  <div class="reply_thanks">
-                    <img src="img/thx_icon.png" alt="고마워요">
-                  </div>
-                  <div class="reply_thx_count">
-                    <span class="reply_count">1</span>
-                  </div>
-                  <div class="last_date">
-                    <span>3일전</span>
-                  </div>
-                </div>
-              </div>
-              <!-- box end -->
-            </div>
-
-
-            <div class="Write_By_Writer">
-              <div class="identified_writer">
-                <span>글쓴이</span>
-              </div>
-              <!-- the block of reply -->
-              <div class="reply_reply_wrapper reply_box row">
-                <div class="reply_wrapper row">
-                  <div class="reply_left">
-                    <span>ㅋㅋㅋㅋㅌㅋㅋㅋ 크으~ 선생님 챙겨주는 마음 멋있어요 !!</span>
-                  </div>
-                  <div class="report">
-                    <img src="img/siren.png" alt="신고">
-                  </div>
-                </div>
-                <div class="bottom_side row" onclick="thx_increase(this)">
-                  <div class="reply_thanks">
-                    <img src="img/thx_icon.png" alt="고마워요">
-                  </div>
-                  <div class="reply_thx_count">
-                    <span class="reply_count">1</span>
-                  </div>
-                  <div class="last_date">
-                    <span>3일전</span>
-                  </div>
-                </div>
-              </div>
-              <!-- box end -->
-            </div>
-
-
-            <div class="Write_By_User">
-              <!-- the block of reply -->
-              <div class="reply_reply_wrapper reply_box row">
-                <div class="reply_wrapper row">
-                  <div class="reply_left">
-                    <span>제가 케잌사서 반애들 복도 끝으로 모아서 <br> 서프라이즈 해드렸죠..<br>ㅎ(뿌듯뿌듯)</span>
-                    <!-- 댓글 내용 -->
-                  </div>
-                  <div class="report">
-                    <img src="img/siren.png" alt="신고">
-                  </div>
-                </div>
-                <div class="bottom_side row" onclick="thx_increase(this)">
-                  <div class="reply_thanks">
-                    <img src="img/thx_icon.png" alt="고마워요">
-                  </div>
-                  <div class="reply_thx_count">
-                    <span class="reply_count">1</span>
-                    <!-- 고마워요 몇개 받았는지 -->
-                  </div>
-                  <div class="last_date">
-                    <span>3일전</span>
-                    <!-- 글 언제썼는지 -->
-                  </div>
-                </div>
-              </div>
-              <!-- box end -->
-            </div>
-
-
-
-          </div>
-          <!-- the block of reply -->
-
-          <!-- the block of reply -->
-          <div class="reply_box">
-            <div class="reply_wrapper row">
-              <div class="reply_left">
-                <span>생일 축하해요. 올해도 벅찬 날이 가득하길 바랄게요</span>
-              </div>
-              <div class="report">
-                <img src="img/siren.png" alt="신고">
-              </div>
-            </div>
-            <div class="bottom_side row" onclick="thx_increase(this)">
-              <div class="reply_thanks">
-                <img src="img/thx_icon.png" alt="고마워요">
-              </div>
-              <div class="reply_thx_count">
-                <span class="reply_count">1</span>
-              </div>
-              <div class="last_date">
-                <span>3일전</span>
-              </div>
-            </div>
-          </div>
-          <!-- box end -->
-
           <!-- the block of reply -->
           <div class="reply_box">
             <div class="reply_wrapper row">
@@ -322,6 +343,7 @@
               </div>
               <div class="report">
                 <img src="img/siren.png" alt="신고">
+                <a href="#reply_input">댓글달기</a>
               </div>
             </div>
             <div class="bottom_side row" onclick="thx_increase(this)">
@@ -346,6 +368,7 @@
               </div>
               <div class="report">
                 <img src="img/siren.png" alt="신고">
+                <a href="#reply_input">댓글달기</a>
               </div>
             </div>
             <div class="bottom_side row" onclick="thx_increase(this)">
@@ -362,8 +385,35 @@
           </div>
           <!-- box end -->
 
+          <!-- the block of reply -->
+          <div class="reply_box">
+            <div class="reply_wrapper row">
+              <div class="reply_left">
+                <span>생일 축하해요. 올해도 벅찬 날이 가득하길 바랄게요</span>
+              </div>
+              <div class="report">
+                <img src="img/siren.png" alt="신고">
+                <a href="#reply_input">댓글달기</a>
+              </div>
+            </div>
+            <div class="bottom_side row" onclick="thx_increase(this)">
+              <div class="reply_thanks">
+                <img src="img/thx_icon.png" alt="고마워요">
+              </div>
+              <div class="reply_thx_count">
+                <span class="reply_count">1</span>
+              </div>
+              <div class="last_date">
+                <span>3일전</span>
+              </div>
+            </div>
+          </div>
+          <!-- box end -->
 
-
+          <!-- 채팅모듈 -->
+          <form class="inputtext" action="" method="post">
+            <input id="reply_input" type="text" name="" value="" required placeholder="댓글을 입력하세요">
+          </form>
         </div>
 
       </div>
@@ -406,15 +456,14 @@
 
   <!-- basic tap to all page -->
   <header id="header" class="row">
-    <div class="container">
+    <div class="container_relative">
       <div class="Logo">
         나쁜기억지우개
       </div>
       <form class="SearchBar" action="index.html" method="post">
         <input type="text" name="" value="" placeholder="해시태그검색">
         <div id="result">
-          <p>hello</p>
-          <p>afwfawf</p>
+
 
         </div>
       </form>
@@ -430,11 +479,98 @@
       </div>
       <div class="alarm">
         <img src="img/alarm_icon.png" alt="알람">
+        <div class="alertpop hide">
+          <div class="alert_shield row">
+            <!-- literal form -->
+            <div class="alert_content row">
+              <div class="alert_content_img">
+                  <img src="img/thx_icon.png" alt="">
+              </div>
+              <div class="alert_text">
+                <p>잡담글에 답글이 달렸어요</p>
+                <div>멕시코가 스웨덴을 이기고 한국이 독일을 이기면 어떻게되는거죠 설명좀해주세요 메이플스토리 갓겜 스토리 오지고 지리구요</div>
+              </div>
+              <span class="alert_time">8시간 전</span>
+            </div>
+            <div class="alert_content row">
+              <div class="alert_content_img">
+                  <img src="img/thx_icon.png" alt="">
+              </div>
+              <div class="alert_text">
+                <p>잡담글에 답글이 달렸어요</p>
+                <div>멕시코가 스웨덴을 이기고 한국이 독일을 이기면 어떻게되는거죠 설명좀해주세요 메이플스토리 갓겜 스토리 오지고 지리구요</div>
+              </div>
+              <span class="alert_time">8시간 전</span>
+            </div>
+            <div class="alert_content row">
+              <div class="alert_content_img">
+                  <img src="img/thx_icon.png" alt="">
+              </div>
+              <div class="alert_text">
+                <p>잡담글에 답글이 달렸어요</p>
+                <div>멕시코가 스웨덴을 이기고 한국이 독일을 이기면 어떻게되는거죠 설명좀해주세요 메이플스토리 갓겜 스토리 오지고 지리구요</div>
+              </div>
+              <span class="alert_time">8시간 전</span>
+            </div>
+            <div class="alert_content row">
+              <div class="alert_content_img">
+                  <img src="img/thx_icon.png" alt="">
+              </div>
+              <div class="alert_text">
+                <p>잡담글에 답글이 달렸어요</p>
+                <div>멕시코가 스웨덴을 이기고 한국이 독일을 이기면 어떻게되는거죠 설명좀해주세요 메이플스토리 갓겜 스토리 오지고 지리구요</div>
+              </div>
+              <span class="alert_time">8시간 전</span>
+            </div>
+            <div class="alert_content row">
+              <div class="alert_content_img">
+                  <img src="img/thx_icon.png" alt="">
+              </div>
+              <div class="alert_text">
+                <p>잡담글에 답글이 달렸어요</p>
+                <div>멕시코가 스웨덴을 이기고 한국이 독일을 이기면 어떻게되는거죠 설명좀해주세요 메이플스토리 갓겜 스토리 오지고 지리구요</div>
+              </div>
+              <span class="alert_time">8시간 전</span>
+            </div>
+            <div class="alert_content row">
+              <div class="alert_content_img">
+                  <img src="img/thx_icon.png" alt="">
+              </div>
+              <div class="alert_text">
+                <p>잡담글에 답글이 달렸어요</p>
+                <div>멕시코가 스웨덴을 이기고 한국이 독일을 이기면 어떻게되는거죠 설명좀해주세요 메이플스토리 갓겜 스토리 오지고 지리구요</div>
+              </div>
+              <span class="alert_time">8시간 전</span>
+            </div>
+            <div class="alert_content row">
+              <div class="alert_content_img">
+                  <img src="img/thx_icon.png" alt="">
+              </div>
+              <div class="alert_text">
+                <p>잡담글에 답글이 달렸어요</p>
+                <div>멕시코가 스웨덴을 이기고 한국이 독일을 이기면 어떻게되는거죠 설명좀해주세요 메이플스토리 갓겜 스토리 오지고 지리구요</div>
+              </div>
+              <span class="alert_time">8시간 전</span>
+            </div>
+            <div class="alert_content row">
+              <div class="alert_content_img">
+                  <img src="img/thx_icon.png" alt="">
+              </div>
+              <div class="alert_text">
+                <p>잡담글에 답글이 달렸어요</p>
+                <div>멕시코가 스웨덴을 이기고 한국이 독일을 이기면 어떻게되는거죠 설명좀해주세요 메이플스토리 갓겜 스토리 오지고 지리구요</div>
+              </div>
+              <span class="alert_time">8시간 전</span>
+            </div>
+
+
+          </div>
+        </div>
       </div>
       <div class="store">
         <img src="img/store.png" alt="상점">
       </div>
-      <div class="setting">
+      <div class="setting" onclick="location.href='myroom.html'">
         <img src="img/b13200_config.png" alt="설정">
       </div>
 
@@ -446,8 +582,172 @@
   <div class="container">
 
 
+    <div class="Store_Section hide">
+      <div id="slide" class="slideshow">
+        <input type="radio" name="pos" id="pos1" checked>
+        <input type="radio" name="pos" id="pos2">
+        <input type="radio" name="pos" id="pos3">
+        <input type="radio" name="pos" id="pos4">
+        <!-- <input type="radio" name="pos" id="pos5"> -->
+        <ul>
+          <li><img src="img/emo/erasers_pack.png" alt="" style="width:100%;"></li>
+          <li><img src="img/emo/erasers_pack.png" alt="" style="width:100%;"></li>
+          <li><img src="img/emo/erasers_pack.png" alt="" style="width:100%;"></li>
+          <li><img src="img/emo/erasers_pack.png" alt="" style="width:100%;"></li>
+
+        </ul>
+        <p class="pos">
+          <label for="pos1"></label>
+          <label for="pos2"></label>
+          <label for="pos3"></label>
+          <label for="pos4"></label>
+          <!-- <label for="pos5"></label> -->
+        </p>
+
+      </div>
+      <section class="row">
+        <div class="boxx1">
+          <div class="store_content">
+            <img src="img/alarm_icon.png" alt="">
+            <div class="textside">
+              <p class="itemname">item name</p>
+              <hr>
+              <p class="description">Description</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="boxx2">
+          <div class="store_content">
+            <img src="img/alarm_icon.png" alt="">
+            <div class="textside">
+              <p class="itemname">item name</p>
+              <hr>
+              <p class="description">Description</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="boxx3">
+          <div class="store_content">
+            <img src="img/alarm_icon.png" alt="">
+            <div class="textside">
+              <p class="itemname">item name</p>
+              <hr>
+              <p class="description">Description</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="boxx4">
+          <div class="store_content">
+            <img src="img/alarm_icon.png" alt="">
+            <div class="textside">
+              <p class="itemname">item name</p>
+              <hr>
+              <p class="description">Description</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="boxx5">
+          <div class="store_content">
+            <img src="img/alarm_icon.png" alt="">
+            <div class="textside">
+              <p class="itemname">item name</p>
+              <hr>
+              <p class="description">Description</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="boxx6">
+          <div class="store_content">
+            <img src="img/alarm_icon.png" alt="">
+            <div class="textside">
+              <p class="itemname">item name</p>
+              <hr>
+              <p class="description">Description</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="boxx7">
+          <div class="store_content">
+            <img src="img/alarm_icon.png" alt="">
+            <div class="textside">
+              <p class="itemname">item name</p>
+              <hr>
+              <p class="description">Description</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="boxx8">
+          <div class="store_content">
+            <img src="img/alarm_icon.png" alt="">
+            <div class="textside">
+              <p class="itemname">item name</p>
+              <hr>
+              <p class="description">Description</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="boxx9">
+          <div class="store_content">
+            <img src="img/alarm_icon.png" alt="">
+            <div class="textside">
+              <p class="itemname">item name</p>
+              <hr>
+              <p class="description">Description</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="boxx10">
+          <div class="store_content">
+            <img src="img/alarm_icon.png" alt="">
+            <div class="textside">
+              <p class="itemname">item name</p>
+              <hr>
+              <p class="description">Description</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="boxx11">
+          <div class="store_content">
+            <img src="img/alarm_icon.png" alt="">
+            <div class="textside">
+              <p class="itemname">item name</p>
+              <hr>
+              <p class="description">Description</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="boxx12" onclick="hhh(this)">
+          <div class="store_content">
+            <img src="img/alarm_icon.png" alt="">
+            <div class="textside">
+              <p class="itemname">item name</p>
+              <hr>
+              <p class="description">Description</p>
+
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+
+    </div>
+
   </div>
 
+
+  </div>
 
   <!-- side bar CODE_NAME = MATE.css -->
   <div class="asidegroup close">
@@ -458,14 +758,28 @@
 
 
     <div class="aside">
-      M<br>
-      A<br>
-      T<br>
-      E<br>
-
+      <img src="img/matepane.png" alt="">
     </div>
 
   </div>
+  <!-- <script type="text/javascript">
+
+    for(var i=0;i<12;i++)
+    {
+      console.log('boxx'+(parseInt(i)+parseInt(1)));
+
+      document.getElementsByClassName('boxx'+(parseInt(i)+parseInt(1)))[0].classList.add("col-4");
+      document.getElementsByClassName('boxx'+(parseInt(i)+parseInt(1)))[0].classList.add("col-m-3");
+      document.getElementsByClassName('boxx'+(parseInt(i)+parseInt(1)))[0].classList.add("col-s-1");
+      document.getElementsByClassName('boxx'+(parseInt(i)+parseInt(1)))[0].style.padding ="3%";
+
+      function hhh(e){
+          alert($(e).text());
+      }
+
+    }
+
+  </script> -->
   <script type="text/javascript">
   function get(content){
     //alert(document.getElementsByClassName('text')[1].innerHTML);
@@ -491,7 +805,7 @@
   <script src="js/login.js" charset="utf-8"></script>
   <script src="js/Mate.js" charset="utf-8"></script>
   <script>
-  var tt = ["anagrams", "concatenation", "difference", "includes", "intersection", "remove", "array-sample", "array-union", "array-without", "array-zip", "average-of-array-of-numbers", "bottom-visible", "capitalize-first-letter-of-every-word", "capitalize-first-letter", "chain-asynchronous-functions", "check-for-palindrome", "chunk-array", "collatz-algorithm", "compact", "count-occurrences-of-a-value-in-array", "current-URL", "curry", "deep-flatten-array", "distance-between-two-points", "divisible-by-number", "drop-elements-in-array", "element-is-visible-in-viewport", "escape-regular-expression", "even-or-odd-number", "factorial", "fibonacci-array-generator", "fill-array", "filter-out-non-unique-values-in-an-array", "flatten-array-up-to-depth", "flatten-array", "get-days-difference-between-dates", "get-max-value-from-array", "get-min-value-from-array", "get-native-type-of-value", "get-scroll-position", "greatest-common-divisor-(GCD)", "group-by", "hamming-distance", "head-of-list", "hexcode-to-RGB", "initial-of-list", "initialize-array-with-range", "initialize-array-with-values", "is-array", "is-boolean", "is-function", "is-number", "is-string", "is-symbol", "last-of-list", "measure-time-taken-by-function", "median-of-array-of-numbers", "nth-element-of-array", "number-to-array-of-digits", "object-from-key-value-pairs", "object-to-key-value-pairs", "ordinal-suffix-of-number", "percentile", "pick", "pipe", "powerset", "promisify", "random-integer-in-range", "random-number-in-range", "redirect-to-URL", "reverse-a-string", "RGB-to-hexadecimal", "round-number-to-n-digits", "run-promises-in-series", "scroll-to-top", "shallow-clone-object", "shuffle-array", "similarity-between-arrays", "sleep", "sort-characters-in-string-(alphabetical)", "speech-synthesis-(experimental)", "standard-deviation", "sum-of-array-of-numbers", "swap-values-of-two-variables", "tail-of-list", "take-right", "take", "truncate-a-string", "unique-values-of-array", "URL-parameters", "UUID-generator", "validate-email", "validate-number", "value-or-default", "write-json-to-file"]
+    var tt = ["anagrams", "concatenation", "difference", "includes", "intersection", "remove", "array-sample", "array-union", "array-without", "array-zip", "average-of-array-of-numbers", "bottom-visible", "capitalize-first-letter-of-every-word", "capitalize-first-letter", "chain-asynchronous-functions", "check-for-palindrome", "chunk-array", "collatz-algorithm", "compact", "count-occurrences-of-a-value-in-array", "current-URL", "curry", "deep-flatten-array", "distance-between-two-points", "divisible-by-number", "drop-elements-in-array", "element-is-visible-in-viewport", "escape-regular-expression", "even-or-odd-number", "factorial", "fibonacci-array-generator", "fill-array", "filter-out-non-unique-values-in-an-array", "flatten-array-up-to-depth", "flatten-array", "get-days-difference-between-dates", "get-max-value-from-array", "get-min-value-from-array", "get-native-type-of-value", "get-scroll-position", "greatest-common-divisor-(GCD)", "group-by", "hamming-distance", "head-of-list", "hexcode-to-RGB", "initial-of-list", "initialize-array-with-range", "initialize-array-with-values", "is-array", "is-boolean", "is-function", "is-number", "is-string", "is-symbol", "last-of-list", "measure-time-taken-by-function", "median-of-array-of-numbers", "nth-element-of-array", "number-to-array-of-digits", "object-from-key-value-pairs", "object-to-key-value-pairs", "ordinal-suffix-of-number", "percentile", "pick", "pipe", "powerset", "promisify", "random-integer-in-range", "random-number-in-range", "redirect-to-URL", "reverse-a-string", "RGB-to-hexadecimal", "round-number-to-n-digits", "run-promises-in-series", "scroll-to-top", "shallow-clone-object", "shuffle-array", "similarity-between-arrays", "sleep", "sort-characters-in-string-(alphabetical)", "speech-synthesis-(experimental)", "standard-deviation", "sum-of-array-of-numbers", "swap-values-of-two-variables", "tail-of-list", "take-right", "take", "truncate-a-string", "unique-values-of-array", "URL-parameters", "UUID-generator", "validate-email", "validate-number", "value-or-default", "write-json-to-file"]
 
 
     var flag = true;
@@ -634,6 +948,8 @@
   </script>
   <script src="js/worry_to_story.js" charset="utf-8"></script>
   <script src="js/reply.js" charset="utf-8"></script>
+  <script src="js/myroom.js" charset="utf-8"></script>
+  <script src="js/store.js" charset="utf-8"></script>
   <script type="text/javascript">
   // click_list css in vertical line
   $('.list_content').css("height",$('.click_list').outerHeight()/3);
@@ -642,7 +958,7 @@
 
 
   </script>
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     $('p').mouseenter(function(){
       $(this).css({"color":"black","background-color":"rgba(230,230,230,0.2)"});
 
@@ -651,9 +967,9 @@
       $(this).css({"color":"#626262","background-color":"white"});
     });
 
-  </script>
+  </script> -->
 
-
+<script src="js/alert.js" charset="utf-8"></script>
 </body>
 
 </html>
