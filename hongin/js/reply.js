@@ -1,6 +1,5 @@
-
-function replyre(){
-  $('.box').on('click',function(){
+$(document).ready(function(){
+  $('.content').on('click',function(){
     document.getElementsByClassName("forlogin")[0].classList.remove("hide");
     document.getElementsByClassName("click_list")[0].classList.remove("hide");
     $('.forlogin').animate({opacity:'1'},300);
@@ -25,5 +24,8 @@ function replyre(){
 
 
   });
-
-}
+  $('.report > img').on('click',function(){
+    let parent = $(this).parent().parent();
+    parent.children('.reply_left').text("무엇떄문에 신고하시겠습니까?");
+  });
+});
