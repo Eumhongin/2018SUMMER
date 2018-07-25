@@ -1,0 +1,392 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+  <link rel="stylesheet" href="font/font.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="js/script.js"></script> -->
+
+  <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/reply2.css">
+  <script type="text/javascript">
+
+  $(document).ready(function() {
+      setTimeout(function() {
+        $('.content_text').css({'max-height':$(window).outerHeight()*0.7});
+        $('.content_right').css({'max-height':$(window).outerHeight()*0.8});
+        $('#reply_input').css({'bottom':$(window).outerHeight()*0.1*0.5,
+        'width':$('.reply_shield').outerWidth()*0.95,'height':$(window).outerHeight()*0.04});
+          //alert($(window).outerHeight());
+      }, 1000);
+  });
+
+  </script>
+
+
+</head>
+
+<body>
+
+  <!-- reply form default = hide-->
+  <div class="click_list">
+
+    <!-- vertival line -->
+    <div class="vi">
+
+    </div>
+    <!-- content wrapper include reply and text -->
+    <div class="click_list_content row container">
+      <!-- the text side is LEFT -->
+      <div class="content_left col-2">
+        <div class="content_shield">
+          <div id="content_text" class="content_text">
+            바보같아..<br> 나도 힘든걸..<br>
+            <br> 너도 힘드니..?<br> 눈을감고 새카만 밤을<br> 즐기면서..
+            <br>
+            <br>오늘도 하루가 지나가네요..<br> -Oreuka
+            <br> 바보같아..
+            <br> 나도 힘든걸..<br>
+            <br> 너도 힘드니..?<br> 눈을감고 새카만 밤을<br> 즐기면서..
+            <br>
+            <br>오늘도 하루가 지나가네요..<br> -Oreuka
+            <br> 바보같아..
+            <br> 나도 힘든걸..<br>
+            <br> 너도 힘드니..?<br> 눈을감고 새카만 밤을<br> 즐기면서..
+            <br>
+            <br>오늘도 하루가 지나가네요..<br> -Oreuka
+            <br> 바보같아..
+            <br> 나도 힘든걸..<br>
+            <br> 너도 힘드니..?<br> 눈을감고 새카만 밤을<br> 즐기면서..
+            <br>
+            <br>오늘도 하루가 지나가네요..<br> -Oreuka
+            <br> 바보같아..
+            <br> 나도 힘든걸..<br>
+            <br> 너도 힘드니..?<br> 눈을감고 새카만 밤을<br> 즐기면서..
+            <br>
+            <br>오늘도 하루가 지나가네요..<br> -Oreuka
+            <br>
+
+          </div>
+          <div class="content_thanks row" onclick="todak(this)">
+            <img src="img/thx_icon.png" alt="고마워요">
+            <span class="content_thanks_count">3</span>
+          </div>
+
+        </div>
+      </div>
+      <!-- The Reply side is Right -->
+      <div class="content_right col-2">
+
+        <div class="reply_shield">
+          <!-- the block of reply -->
+          <div class="reply_box">
+            <div class="reply_wrapper row">
+              <div class="reply_left">
+                <span>생일 축하해요. 올해도 벅찬 날이 가득하길 바랄게요</span>
+              </div>
+              <div class="report">
+                <img src="img/siren.png" alt="신고">
+                <a>댓글달기</a>
+              </div>
+            </div>
+            <div class="bottom_side row" onclick="thx_increase(this)">
+              <div class="reply_thanks">
+                <img src="img/thx_icon.png" alt="고마워요">
+
+              </div>
+              <div class="reply_thx_count">
+                <span class="reply_count">1</span>
+              </div>
+              <div class="last_date">
+                <span>3일전</span>
+              </div>
+            </div>
+          </div>
+          <!-- box end -->
+          <div class="ID1">
+            <div class="reply_box">
+              <div class="reply_wrapper row">
+                <div class="reply_left">
+                  <span>생일 축하드려요^^</span>
+                </div>
+                <div class="report">
+                  <img src="img/siren.png" alt="신고">
+                  <a>댓글달기</a>
+                </div>
+              </div>
+              <div class="bottom_side row" onclick="thx_increase(this)">
+                <div class="reply_thanks">
+                  <img src="img/thx_icon.png" alt="고마워요">
+                </div>
+                <div class="reply_thx_count">
+                  <span class="reply_count">1</span>
+                </div>
+                <div class="last_date">
+                  <span>3일전</span>
+                </div>
+              </div>
+            </div>
+            <!-- the block of reply_reply -->
+
+            <div class="reply_reply_box">
+              <!-- 대댓글 유져에의한ㄴㄴ-->
+              <div class="Write_By_User">
+
+              </div>
+              <div class="Write_By_Writer">
+
+              </div>
+              <!-- 대댓글 글쓴이에의한 댓글 글쓴이 아님.-->
+              <div class="Write_By_Writer">
+                <div class="identified_writer">
+                  <span>글쓴이</span>
+                </div>
+                <div class="reply_reply_wrapper reply_box row">
+                  <div class="reply_wrapper row">
+                    <div class="reply_left">
+                      <span>고마워요</span>
+                    </div>
+                    <div class="report">
+                      <img src="img/siren.png" alt="신고">
+                      <a>댓글달기</a>
+                    </div>
+                  </div>
+                  <div class="bottom_side row" onclick="thx_increase(this)">
+                    <div class="reply_thanks">
+                      <img src="img/thx_icon.png" alt="고마워요">
+                    </div>
+                    <div class="reply_thx_count">
+                      <span class="reply_count">1</span>
+                    </div>
+                    <div class="last_date">
+                      <span>3일전</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="Write_By_User">
+                <!-- the block of reply -->
+                <div class="reply_reply_wrapper reply_box row">
+                  <div class="reply_wrapper row">
+                    <div class="reply_left">
+                      <span>저도 5학년 썜 케잌 사다드린게 생각나욬 ㅋㅋ</span>
+                    </div>
+                    <div class="report">
+                      <img src="img/siren.png" alt="신고">
+                      <a>댓글달기</a>
+                    </div>
+                  </div>
+                  <div class="bottom_side row" onclick="thx_increase(this)">
+                    <div class="reply_thanks">
+                      <img src="img/thx_icon.png" alt="고마워요">
+                    </div>
+                    <div class="reply_thx_count">
+                      <span class="reply_count">1</span>
+                    </div>
+                    <div class="last_date">
+                      <span>3일전</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- box end -->
+              </div>
+
+
+              <div class="Write_By_Writer">
+                <div class="identified_writer">
+                  <span>글쓴이</span>
+                </div>
+                <!-- the block of reply -->
+                <div class="reply_reply_wrapper reply_box row">
+                  <div class="reply_wrapper row">
+                    <div class="reply_left">
+                      <span>ㅋㅋㅋㅋㅌㅋㅋㅋ 크으~ 선생님 챙겨주는 마음 멋있어요 !!</span>
+                    </div>
+                    <div class="report">
+                      <img src="img/siren.png" alt="신고">
+                      <a>댓글달기</a>
+                    </div>
+                  </div>
+                  <div class="bottom_side row" onclick="thx_increase(this)">
+                    <div class="reply_thanks">
+                      <img src="img/thx_icon.png" alt="고마워요">
+                    </div>
+                    <div class="reply_thx_count">
+                      <span class="reply_count">1</span>
+                    </div>
+                    <div class="last_date">
+                      <span>3일전</span>
+                    </div>
+                  </div>
+                </div>
+                <!-- box end -->
+              </div>
+
+
+              <div class="Write_By_User">
+                <!-- the block of reply -->
+                <div class="reply_reply_wrapper reply_box row">
+                  <div class="reply_wrapper row">
+                    <div class="reply_left">
+                      <span>제가 케잌사서 반애들 복도 끝으로 모아서 <br> 서프라이즈 해드렸죠..<br>ㅎ(뿌듯뿌듯)</span>
+                      <!-- 댓글 내용 -->
+                    </div>
+                    <div class="report">
+                      <img src="img/siren.png" alt="신고">
+                      <a>댓글달기</a>
+                    </div>
+                  </div>
+                  <div class="bottom_side row" onclick="thx_increase(this)">
+                    <div class="reply_thanks">
+                      <img src="img/thx_icon.png" alt="고마워요">
+                    </div>
+                    <div class="reply_thx_count">
+                      <span class="reply_count">1</span>
+                      <!-- 고마워요 몇개 받았는지 -->
+                    </div>
+                    <div class="last_date">
+                      <span>3일전</span>
+                      <!-- 글 언제썼는지 -->
+                    </div>
+                  </div>
+                </div>
+                <!-- box end -->
+              </div>
+
+
+
+            </div>
+            <!-- the block of reply -->
+          </div>
+          <!-- the block of reply -->
+          <div class="reply_box">
+            <div class="reply_wrapper row">
+              <div class="reply_left">
+                <span>생일 축하해요. 올해도 벅찬 날이 가득하길 바랄게요</span>
+              </div>
+              <div class="report">
+                <img src="img/siren.png" alt="신고">
+                <a>댓글달기</a>
+              </div>
+            </div>
+            <div class="bottom_side row" onclick="thx_increase(this)">
+              <div class="reply_thanks">
+                <img src="img/thx_icon.png" alt="고마워요">
+              </div>
+              <div class="reply_thx_count">
+                <span class="reply_count">1</span>
+              </div>
+              <div class="last_date">
+                <span>3일전</span>
+              </div>
+            </div>
+          </div>
+          <!-- box end -->
+
+          <!-- the block of reply -->
+          <div class="reply_box">
+            <div class="reply_wrapper row">
+              <div class="reply_left">
+                <span>생일 축하해요. 올해도 벅찬 날이 가득하길 바랄게요</span>
+              </div>
+              <div class="report">
+                <img src="img/siren.png" alt="신고">
+                <a>댓글달기</a>
+              </div>
+            </div>
+            <div class="bottom_side row" onclick="thx_increase(this)">
+              <div class="reply_thanks">
+                <img src="img/thx_icon.png" alt="고마워요">
+              </div>
+              <div class="reply_thx_count">
+                <span class="reply_count">1</span>
+              </div>
+              <div class="last_date">
+                <span>3일전</span>
+              </div>
+            </div>
+          </div>
+          <!-- box end -->
+
+          <!-- the block of reply -->
+          <div class="reply_box">
+            <div class="reply_wrapper row">
+              <div class="reply_left">
+                <span>생일 축하해요. 올해도 벅찬 날이 가득하길 바랄게요</span>
+              </div>
+              <div class="report">
+                <img src="img/siren.png" alt="신고">
+                <a>댓글달기</a>
+              </div>
+            </div>
+            <div class="bottom_side row" onclick="thx_increase(this)">
+              <div class="reply_thanks">
+                <img src="img/thx_icon.png" alt="고마워요">
+              </div>
+              <div class="reply_thx_count">
+                <span class="reply_count">1</span>
+              </div>
+              <div class="last_date">
+                <span>3일전</span>
+              </div>
+            </div>
+          </div>
+          <!-- box end -->
+
+          <!-- 채팅모듈 -->
+          <form class="inputtext" action="" method="post">
+            <input id="reply_input" type="text" name="" value="" required placeholder="댓글을 입력하세요">
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <!-- login fade out link by login.js-->
+
+
+  </div>
+
+  <script type="text/javascript">
+    function get(content) {
+      //alert(document.getElementsByClassName('text')[1].innerHTML);
+
+      document.getElementById('content_text').innerHTML = content.getElementsByClassName('text')[0].innerHTML;
+
+    }
+
+    function todak(obj) {
+      let initvalue = parseInt(obj.getElementsByClassName('content_thanks_count')[0].innerHTML);
+      //console.log(initvalue);
+      obj.getElementsByClassName('content_thanks_count')[0].innerHTML = ++initvalue;
+    }
+
+    function thx_increase(obj) {
+      let initvalue = parseInt(obj.getElementsByClassName('reply_count')[0].innerHTML);
+      //console.log(initvalue);
+      obj.getElementsByClassName('reply_count')[0].innerHTML = ++initvalue;
+
+    }
+  </script>
+
+
+  <!-- <script src="js/reply.js" charset="utf-8"></script> -->
+  <script type="text/javascript">
+    // click_list css in vertical line
+    $('.list_content').css("height", $('.click_list').outerHeight() / 3);
+
+  </script>
+
+</body>
+
+</html>

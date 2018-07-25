@@ -11,16 +11,16 @@
         margin:0;
         padding:0;
       }
-      .back{
+      .reply_{
         width: 100%;
         background-color: rgba(0,0,0,0.4);
         position: relative;
         z-index: 9999;
         opacity: 0;
       }
-      .back iframe{
-        margin:0 auto;
-        margin-top : 20%;
+      .reply_ iframe{
+        margin-left:24%;
+        margin-top : 5%;
       }
       .cc,.bb,.aa{
 
@@ -33,54 +33,50 @@
 
     </style>
     <script type="text/javascript">
-    $(document).ready(function(){
-      $('body').css({'height':$(window).outerHeight()});
-      $('.cc').on('click',function(){
-        $('.back').css({'height':$(window).outerHeight()});
-        $('.back').attr('class','back');
-        $('.back').animate({opacity:'1'},300);
+      $(document).ready(function(){
+        
+        $('body').css({'height':$(window).outerHeight()});
+        $('iframe').css({'height':$(window).outerHeight()*0.8});
+        $('.cc').on('click',function(){
+          $('.reply_').css({'height':$(window).outerHeight()});
+          $('.reply_').attr('class','reply_');
+          $('.reply_').animate({opacity:'1'},300);
+
+
+        });
+        $(document).keyup(function(e) {
+          //if (e.keyCode === 13) $('.save').click();     // enter
+          if (e.keyCode === 27)
+          {
+            $('.reply_').animate({opacity:"0",display:'none'},300);
+            $('.reply_').queue(function(next) { $(this).attr('class','reply_ hide'); next(); })
+
+
+
+          }
+          //$('.reply_').attr('class','reply_ hide');
+
+        });
+
+
 
       });
-      $(document).keyup(function(e) {
-        //if (e.keyCode === 13) $('.save').click();     // enter
-        if (e.keyCode === 27)
-        {
-          $('.back').animate({opacity:"0",display:'none'},300);
-          $('.back').queue(function(next) { $(this).attr('class','back hide'); next(); })
-
-
-
-        }
-        //$('.back').attr('class','back hide');
-
-      });
-
-
-
-    });
 
     </script>
   </head>
   <body>
 
 
-    <div class="back hide">
-      <iframe src="te.html" width="100%" height="100%"></iframe>
+    <div class="reply_ hide" onload="alert('loading complete')">
+      <iframe src="reply.html" width="50%" frameBorder="0"></iframe>
     </div>
-    <div class="back">
-      <iframe src="myroom.html" width="100%" height="100%"></iframe>
-    </div>
+
 
     <div class="cc">
-      클릭하세요1
-    </div>
-    <div class="bb">
-      클릭하세요2
+      클릭하세요1클릭하세요1flakwjflakfalwkfnawfakjfbawlkjblfbaklfabwfklafawf <br>
+      kajwflkwajflakwjfawkf
     </div>
 
-    <div class="aa">
-      클릭하세요3
-    </div>
 
   </body>
 </html>

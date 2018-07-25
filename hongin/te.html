@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <style media="screen">
     body{
       overflow:hidden;
@@ -148,7 +149,7 @@
     if(event.keyCode == 13){
       let from_input = document.getElementById('text1');
          alert(from_input.value);
-         document.getElementById('content').innerHTML = from_input.value;
+         $('#content').append(from_input.value);
          from_input.value = '';
 
     }
