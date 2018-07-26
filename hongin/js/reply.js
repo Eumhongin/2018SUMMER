@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $('#reply_input').css({'top':$()})
   $('.content').on('click',function(){
     document.getElementsByClassName("forlogin")[0].classList.remove("hide");
     document.getElementsByClassName("click_list")[0].classList.remove("hide");

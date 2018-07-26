@@ -140,10 +140,8 @@
 }
 #reply_input{
   position: absolute;
-  width: 100%;
-  height: 30px;
-  background-color: none;
-  border-radius: 7px;
-  bottom:0;
+  background-color: red;
+  top:50%;
+
 
 }
