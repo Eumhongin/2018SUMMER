@@ -67,6 +67,10 @@
 
   text-align: left;
 }
+.Mate_Info_Star{
+  width: 80%;
+  margin:0 auto;
+}
 .Mate_Info_Star *{
   width: 20%;
   float: left;
