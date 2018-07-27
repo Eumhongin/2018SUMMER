@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/core.css">
     <link rel="stylesheet" href="css/Mate.css">
+    <link rel="stylesheet" href="css/myroom.css">
     <script>
 
     var aside = document.getElementsByClassName("aside");
@@ -43,7 +44,15 @@
         }
 
       });
+
+
+      //alert($('.info').outerHeight());
+      $('.Mate_Introduce > textarea').css({'height':$('.info').outerHeight()*0.8});
+      $('.Mate_Info > input').css({'height':$('.Mate_Introduce > p').height()});
     });
+
+
+
 
 
     </script>
@@ -112,13 +121,96 @@
   <!-- container -->
   <div class="container">
     <div class="info">
+      <div class="Mate_Introduce_Style">
+
+      </div>
+      <div class="Mate_Introduce">
+
+        <p>메이트소개</p>
+        <hr>
+        <textarea name="name" rows="8" cols="100" placeholder="자신을 소개하는 글을 써보세요!" ></textarea>
+
+
+      </div>
+      <div class="Mate_Info">
+        <input type="text" name="" value="" placeholder="닉네임을 적어보세요">
+        <hr>
+        <div class="Mate_Info_Hashtagbox row">
+          <div class="Mate_IHLeft col-2">
+            <div class="Mate_IHLBox row">
+                <input type="checkbox" name="" value="">
+                <span>가정환경</span>
+            </div>
+            <div class="Mate_IHLBox row">
+                <input type="checkbox" name="" value="">
+                <span>학업,진로</span>
+            </div>
+            <div class="Mate_IHLBox row">
+                <input type="checkbox" name="" value="">
+                <span>적성,취업</span>
+            </div>
+            <div class="Mate_IHLBox row">
+                <input type="checkbox" name="" value="">
+                <span>성격</span>
+            </div>
+            <div class="Mate_IHLBox row">
+                <input type="checkbox" name="" value="">
+                <span>외모</span>
+            </div>
+            <div class="Mate_IHLBox row">
+                <input type="checkbox" name="" value="">
+                <span>연애</span>
+            </div>
+
+          </div>
+          <div class="Mate_IHRight col-2">
+            <div class="Mate_IHRBox row">
+                <input type="checkbox" name="" value="">
+                <span>건강</span>
+            </div>
+            <div class="Mate_IHRBox row">
+                <input type="checkbox" name="" value="">
+                <span>금전</span>
+            </div>
+            <div class="Mate_IHRBox row">
+                <input type="checkbox" name="" value="">
+                <span>중독</span>
+            </div>
+            <div class="Mate_IHRBox row">
+                <input type="checkbox" name="" value="">
+                <span>나쁜 기억</span>
+            </div>
+            <div class="Mate_IHRBox row">
+                <input type="checkbox" name="" value="">
+                <span>대인관계</span>
+            </div>
+
+          </div>
+        </div>
+        <div class="Mate_Info_Star row">
+          <img src="img/fav_star_fill.png" alt="별">
+          <img src="img/fav_star_fill.png" alt="별">
+          <img src="img/fav_star_fill.png" alt="별">
+          <img src="img/fav_star_fill.png" alt="별">
+          <img src="img/fav_star.png" alt="별">
+
+        </div>
+        <div class="Mate_Info_Score">
+          <span>평점 4.3</span>
+        </div>
+
+      </div>
+      <div class="Mate_Property">
+        <span>고마워요 : 3개</span>
+
+      </div>
       <div class="mypic">
         <img src="img/flower.jpg" alt="내면상" style="border-radius:100%;width:100%;margin:0 auto;">
       </div>
-      <div class="name">
-        <span>EX87EKSJ</span>
+      <input type="file" id="selectedFile" style="display: none;" />
 
-      </div>
+      <button class='picedit' type="button" name="button" onclick="document.getElementById('selectedFile').click();">편집하기</button>
+
       <div class="menulist">
         <button id="mycontent_text" type="button" name="button" onclick="click_mycontent();">내가쓴 글</button>
         <button id="myreply_text" type="button" name="button" onclick="click_myreply();">내가쓴 댓글</button>
